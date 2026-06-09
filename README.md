@@ -5,7 +5,7 @@
 > 本仓库收录我在 AI（GitHub Copilot / Claude）辅助下整理的 LeetCode 题解笔记。
 > 重点不是“题做出来”，而是**沉淀解题模板 + 提升主动回忆能力**。
 
-**在线阅读**：<https://liukun2634.github.io/leetcode-ai/>（左侧目录、全文搜索、代码高亮、上一/下一题分页）
+**在线阅读**：<https://liukun2634.github.io/leetcode-ai-java/>（左侧目录、全文搜索、代码高亮、上一/下一题分页）
 
 ---
 
@@ -28,7 +28,7 @@
 ## 仓库结构
 
 ```
-leetcode-ai/
+leetcode-ai-java/
 ├── README.md                       ← 你正在看的文件（题目索引自动生成）
 ├── index.html                      ← docsify 入口，GitHub Pages 直接渲染
 ├── _sidebar.md                     ← docsify 左侧目录（脚本自动生成）
@@ -257,7 +257,7 @@ leetcode-{题号}-{英文名}.md
 1. 进入仓库 → **Settings** → **Pages**
 2. **Source** 选 `Deploy from a branch`
 3. **Branch** 选 `main`，目录选 `/ (root)`，保存
-4. 等 1~2 分钟，访问：<https://liukun2634.github.io/leetcode-ai/>
+4. 等 1~2 分钟，访问：<https://liukun2634.github.io/leetcode-ai-java/>
 
 ### 已包含的特性
 
