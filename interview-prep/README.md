@@ -52,75 +52,77 @@
 - ✅ [128. Longest Consecutive Sequence](./01-array-hash/leetcode-128-longest-consecutive-sequence.md) 🟡
 - ✅ [56. Merge Intervals](./01-array-hash/leetcode-56-merge-intervals.md) 🟡
 - ✅ [238. Product of Array Except Self](./01-array-hash/leetcode-238-product-of-array-except-self.md) 🟡
-- 41. First Missing Positive 🔴
+- ✅ [41. First Missing Positive](./01-array-hash/leetcode-41-first-missing-positive.md) 🔴
 
 ### 2) 双指针 & 滑动窗口
 - ✅ [3. Longest Substring Without Repeating Characters](./02-sliding-window/leetcode-3-longest-substring-without-repeating.md) 🟡
-- 11. Container With Most Water 🟡
+- ✅ [11. Container With Most Water](./01-array-hash/leetcode-11-container-with-most-water.md) 🟡
 - ✅ [42. Trapping Rain Water](./02-sliding-window/leetcode-42-trapping-rain-water.md) 🔴
 - ✅ [76. Minimum Window Substring](./02-sliding-window/leetcode-76-minimum-window-substring.md) 🔴
-- 438. Find All Anagrams in a String 🟡
+- ✅ [438. Find All Anagrams in a String](./02-sliding-window/leetcode-438-find-all-anagrams.md) 🟡
+- ✅ [209. Minimum Size Subarray Sum](./02-sliding-window/leetcode-209-minimum-size-subarray-sum.md) 🟡
 
 ### 3) 链表
 - ✅ [206. Reverse Linked List](./03-linked-list/leetcode-206-reverse-linked-list.md) 🟢
 - ✅ [21. Merge Two Sorted Lists](./03-linked-list/leetcode-21-merge-two-sorted-lists.md) 🟢
 - 141. Linked List Cycle 🟢
 - ✅ [142. Linked List Cycle II](./03-linked-list/leetcode-142-linked-list-cycle-ii.md) 🟡
-- 25. Reverse Nodes in k-Group 🔴
+- ✅ [25. Reverse Nodes in k-Group](./03-linked-list/leetcode-25-reverse-nodes-in-k-group.md) 🔴
 - ✅ [146. LRU Cache](./03-linked-list/leetcode-146-lru-cache.md) 🟡（设计题，必考）
 
 ### 4) 栈 & 队列
 - ✅ [20. Valid Parentheses](./04-stack-queue/leetcode-20-valid-parentheses.md) 🟢
-- 155. Min Stack 🟡
+- ✅ [155. Min Stack](./04-stack-queue/leetcode-155-min-stack.md) 🟡
 - ✅ [84. Largest Rectangle in Histogram](./04-stack-queue/leetcode-84-largest-rectangle-in-histogram.md) 🔴（单调栈天花板）
-- 739. Daily Temperatures 🟡
+- ✅ [739. Daily Temperatures](./04-stack-queue/leetcode-739-daily-temperatures.md) 🟡
 - ✅ [239. Sliding Window Maximum](./04-stack-queue/leetcode-239-sliding-window-maximum.md) 🔴（单调队列）
 
 ### 5) 二分查找
 - ✅ [33. Search in Rotated Sorted Array](./05-binary-search/leetcode-33-search-rotated-sorted-array.md) 🟡
-- 153. Find Minimum in Rotated Sorted Array 🟡
-- 4. Median of Two Sorted Arrays 🔴
-- 875. Koko Eating Bananas 🟡（答案二分）
+- ✅ [153. Find Minimum in Rotated Sorted Array](./05-binary-search/leetcode-153-find-min-rotated.md) 🟡
+- ✅ [4. Median of Two Sorted Arrays](./05-binary-search/leetcode-4-median-two-sorted-arrays.md) 🔴
+- ✅ [875. Koko Eating Bananas](./05-binary-search/leetcode-875-koko-eating-bananas.md) 🟡（答案二分）
 
 ### 6) 树
 - ✅ [102. Binary Tree Level Order Traversal](./06-tree/leetcode-102-binary-tree-level-order.md) 🟡
 - ✅ [236. Lowest Common Ancestor](./06-tree/leetcode-236-lowest-common-ancestor.md) 🟡
-- 98. Validate Binary Search Tree 🟡
+- ✅ [98. Validate Binary Search Tree](./06-tree/leetcode-98-validate-bst.md) 🟡
 - ✅ [124. Binary Tree Maximum Path Sum](./06-tree/leetcode-124-binary-tree-maximum-path-sum.md) 🔴
-- 297. Serialize and Deserialize Binary Tree 🔴
-- 199. Binary Tree Right Side View 🟡
+- ✅ [297. Serialize and Deserialize Binary Tree](./06-tree/leetcode-297-serialize-tree.md) 🔴
+- ✅ [199. Binary Tree Right Side View](./06-tree/leetcode-199-right-side-view.md) 🟡
 
 ### 7) 图
 - ✅ [200. Number of Islands](./07-graph/leetcode-200-number-of-islands.md) 🟡
 - ✅ [207. Course Schedule](./07-graph/leetcode-207-course-schedule.md) 🟡
-- 210. Course Schedule II 🟡
-- 994. Rotting Oranges 🟡
-- 547. Number of Provinces 🟡（并查集模板）
+- ✅ [210. Course Schedule II](./07-graph/leetcode-210-course-schedule-ii.md) 🟡
+- ✅ [994. Rotting Oranges](./07-graph/leetcode-994-rotting-oranges.md) 🟡
+- ✅ [547. Number of Provinces](./07-graph/leetcode-547-number-of-provinces.md) 🟡（并查集模板）
 
 ### 8) 回溯
 - ✅ [46. Permutations](./08-backtracking/leetcode-46-permutations.md) 🟡
 - ✅ [78. Subsets](./08-backtracking/leetcode-78-subsets.md) 🟡
-- 39. Combination Sum 🟡
+- ✅ [39. Combination Sum](./08-backtracking/leetcode-39-combination-sum.md) 🟡
 - ✅ [22. Generate Parentheses](./08-backtracking/leetcode-22-generate-parentheses.md) 🟡
-- 51. N-Queens 🔴
+- ✅ [51. N-Queens](./08-backtracking/leetcode-51-n-queens.md) 🔴
 
 ### 9) 动态规划
 - ✅ [322. Coin Change](./09-dp/leetcode-322-coin-change.md) 🟡
 - ✅ [300. Longest Increasing Subsequence](./09-dp/leetcode-300-longest-increasing-subsequence.md) 🟡
-- 70. Climbing Stairs 🟢
+- ✅ [70. Climbing Stairs](./09-dp/leetcode-70-climbing-stairs.md) 🟢
 - ✅ [198. House Robber](./09-dp/leetcode-198-house-robber.md) 🟡
 - ✅ [72. Edit Distance](./09-dp/leetcode-72-edit-distance.md) 🔴
-- 1143. Longest Common Subsequence 🟡
-- ✅ [121](./09-dp/leetcode-121-best-time-to-buy-and-sell-stock.md)/122/123/188. Best Time to Buy and Sell Stock 系列 🟡~🔴
+- ✅ [1143. Longest Common Subsequence](./09-dp/leetcode-1143-longest-common-subsequence.md) 🟡
+- ✅ [121](./09-dp/leetcode-121-best-time-to-buy-and-sell-stock.md)/[122](./09-dp/leetcode-122-best-time-stock-ii.md)/123/188. Best Time to Buy and Sell Stock 系列 🟡~🔴
 
 ### 10) 堆 / 贪心 / 其他
 - ✅ [215. Kth Largest Element in an Array](./10-heap/leetcode-215-kth-largest-element.md) 🟡
-- 23. Merge k Sorted Lists 🔴
+- ✅ [23. Merge k Sorted Lists](./03-linked-list/leetcode-23-merge-k-sorted-lists.md) 🔴
 - ✅ [295. Find Median from Data Stream](./10-heap/leetcode-295-find-median-from-data-stream.md) 🔴（双堆）
-- 55. Jump Game 🟡（贪心）
+- ✅ [55. Jump Game](./09-dp/leetcode-55-jump-game.md) 🟡（贪心）
 - 45. Jump Game II 🟡
-- 208. Implement Trie 🟡
-- 460. LFU Cache 🔴（设计题进阶）
+- ✅ [208. Implement Trie](./10-heap/leetcode-208-implement-trie.md) 🟡
+- ✅ [347. Top K Frequent Elements](./10-heap/leetcode-347-top-k-frequent.md) 🟡
+- ✅ [460. LFU Cache](./10-heap/leetcode-460-lfu-cache.md) 🔴（设计题进阶）
 
 ---
 
