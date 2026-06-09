@@ -14,6 +14,8 @@
 | 操作 | 写法 | 备注 |
 |---|---|---|
 | 创建 | `Map<K,V> m = new HashMap<>();` | |
+| 预分配容量 | `new HashMap<>(expectedSize * 2)` | 减少 rehash，大数据必加 |
+| 不可变字面量 | `Map.of("a", 1, "b", 2)` / `Map.entry(k,v)` | Java 9+，最多 10 对 |
 | 插入/更新 | `m.put(k, v)` | 返回旧值（无则 `null`） |
 | 读 | `m.get(k)` | 不存在返回 `null` |
 | 读 + 默认值 | `m.getOrDefault(k, def)` | **强烈推荐** |
@@ -84,6 +86,12 @@ set.contains(1);                         // O(1)
 set.remove(1);
 set.size();
 Set<Integer> s2 = new HashSet<>(list);   // 从集合初始化
+Set<Integer> s3 = Set.of(1, 2, 3);       // 不可变字面量（Java 9+）
+
+// 集合运算
+set.retainAll(other);   // 交集：只保留两边都有的
+set.removeAll(other);   // 差集：去掉 other 里有的
+set.addAll(other);      // 并集
 ```
 
 > 同样：**自定义对象需重写 `hashCode/equals`**。
@@ -142,6 +150,9 @@ class LRUCache extends LinkedHashMap<Integer, Integer> {
 | `tailMap(k)` | key ≥ k 的子映射 |
 | `subMap(l, r)` | `[l, r)` 区间子映射 |
 | `pollFirstEntry()` | 取出并删除最小 entry |
+| `pollLastEntry()` | 取出并删除最大 entry |
+| `descendingMap()` | 反序视图（按 key 降序遍历） |
+| `navigableKeySet()` / `descendingKeySet()` | 可按顺 / 逆序遍历 key |
 
 ```java
 TreeMap<Integer, Integer> tm = new TreeMap<>();

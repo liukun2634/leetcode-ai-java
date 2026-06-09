@@ -46,6 +46,47 @@ Integer[] arr2 = list3.toArray(new Integer[0]);
 | `Integer[]` | `stream().mapToInt(Integer::intValue).toArray()` | — | `Arrays.asList(arr)` (定长) |
 | `List<Integer>` | `stream().mapToInt(Integer::intValue).toArray()` | `toArray(new Integer[0])` | — |
 
+### `char[]` / `String` / `String[]` / `List<String>` 互转
+
+```java
+// String ↔ char[]
+char[] cs = "abc".toCharArray();
+String s  = new String(cs);                       // 全部
+String s2 = new String(cs, 0, 2);                 // 截断 [0, 2)
+String s3 = String.valueOf(cs);                   // 同 new String(cs)
+
+// String[] ↔ List<String>
+String[] arr = {"a", "b", "c"};
+List<String> list = new ArrayList<>(Arrays.asList(arr));   // 可变
+List<String> view = Arrays.asList(arr);                    // 定长视图
+String[] back = list.toArray(new String[0]);
+
+// List<String> 拼成 String
+String joined = String.join(",", list);                    // "a,b,c"
+
+// String 拆成 List<String>
+List<String> parts = Arrays.asList("a,b,c".split(","));    // 注意 split 是正则
+```
+
+### `int[][]` 深拷贝（`clone()` 是浅拷贝坑！）
+
+```java
+int[][] grid = {{1, 2}, {3, 4}};
+
+int[][] shallow = grid.clone();        // ❌ 只复制了外层引用，子数组还是同一个
+shallow[0][0] = 99;                    // grid[0][0] 也变 99
+
+// ✅ 深拷贝
+int[][] deep = new int[grid.length][];
+for (int i = 0; i < grid.length; i++) {
+    deep[i] = grid[i].clone();
+}
+// 或 stream 一行写
+int[][] deep2 = Arrays.stream(grid).map(int[]::clone).toArray(int[][]::new);
+```
+
+> 一维 `int[] a = b.clone();` 是真深拷贝，安全。**多维必须逐行 clone**。
+
 ---
 
 ## 二、`Arrays.asList` 三个大坑

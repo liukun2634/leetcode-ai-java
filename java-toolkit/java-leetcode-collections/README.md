@@ -16,6 +16,8 @@
 | [05 · 自定义结构 · 链表 & 树节点](./05-linked-list-and-tree.md) | `ListNode` · `TreeNode` · `Pair`-style | 自己定义节点 + 常用辅助函数 |
 | [06 · 常见转换与陷阱](./06-conversions-and-pitfalls.md) | `Arrays` · `Collections` · `Stream` | `int[]` ↔ `Integer[]` ↔ `List<Integer>`、自动装箱坑 |
 | [07 · 常用 Java 函数速查](./07-common-functions.md) | `Math` · `Integer` · `Character` · `Comparator` · `Random` · `BigInteger` | 数学/位运算/字符判断/格式化/比较器组合 |
+| [08 · 并查集 · Union-Find](./08-union-find.md) | `UnionFind` (DSU) | 连通分量、Kruskal、判环、动态等价类 |
+| [09 · 前缀树 · Trie](./09-trie.md) | `Trie` / 01-Trie | 单词字典、前缀计数、最大异或 (LC 421) |
 
 ---
 
@@ -34,6 +36,8 @@
 | **有序映射**（按 key 排序、二分） | `TreeMap<K,V>` | `floorKey` / `ceilingKey` / `firstKey` |
 | **保持插入顺序的 Map**（LRU） | `LinkedHashMap` | 构造第三个参数 `accessOrder=true` |
 | **字符串拼接** | `StringBuilder` | `append` / `reverse` / `toString` / `deleteCharAt` |
+| **动态连通分量 / 并集** | `UnionFind` (DSU) | `find` / `union` / `count` |
+| **字符串字典 / 前缀查询** | `Trie` | `insert` / `search` / `startsWith` |
 
 > **记忆口诀**：**「栈和队列都用 `Deque`，声明面用 `Deque`，实例用 `ArrayDeque`。」**
 > 别用 `java.util.Stack`（继承 `Vector`，方法 `synchronized` 慢且 push/pop 含义和 `Deque` 矛盾）。

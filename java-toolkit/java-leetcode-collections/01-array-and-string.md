@@ -30,7 +30,10 @@ int[][] g2  = {{1,2},{3,4}};
 | 二分查找 | `Arrays.binarySearch(a, key)` | 找不到返回 `-(插入点+1)` |
 | 打印 | `Arrays.toString(a)` / `Arrays.deepToString(grid)` | 调试神器 |
 | 转 stream | `Arrays.stream(a).sum()` | 求和 / max / min |
-| 比较 | `Arrays.equals(a, b)` | **不能用 `==`** |
+| 比较 | `Arrays.equals(a, b)` / `Arrays.deepEquals(g1, g2)` | **不能用 `==`** |
+| 哈希 | `Arrays.hashCode(a)` / `Arrays.deepHashCode(grid)` | 数组当 key 时用（仍不推荐做 HashMap key） |
+| 按索引函数填充 | `Arrays.setAll(a, i -> i * i)` | Java 8+，省一个 for |
+| 包装成定长 List | `Arrays.asList(1, 2, 3)` ⚠️ | 见下方 §1.5 三大坑 |
 
 ### 3. ⚠️ `int[]` vs `Integer[]`：能否传 comparator？
 
@@ -63,6 +66,40 @@ int[][] dp = new int[m][n];
 Arrays.fill(dp, -1);                            // ❌ 只填了一行的引用
 for (int[] row : dp) Arrays.fill(row, -1);      // ✅ 每行单独 fill
 ```
+
+### 5. 二维数组的「行数 / 列数」
+
+```java
+int[][] grid = new int[m][n];
+int rows = grid.length;          // m
+int cols = grid[0].length;       // n —— 注意要先确保非空
+```
+
+> ⚠️ **不规则二维数组**（jagged array）每行长度可能不同，要 `grid[i].length`，不能假设都等于 `grid[0].length`。
+
+### 6. ⚠️ `Arrays.asList` 三大坑（必背）
+
+```java
+// 坑 1：基本类型数组传进去，size == 1
+int[] a = {1, 2, 3};
+List<int[]> wrong = Arrays.asList(a);   // size = 1，元素是整个 int[]
+// 想要 List<Integer> 必须先 boxed
+List<Integer> ok = Arrays.stream(a).boxed().collect(Collectors.toList());
+
+// 坑 2：返回的是 "定长视图"，不能 add/remove
+List<Integer> l = Arrays.asList(1, 2, 3);
+l.set(0, 9);   // ✅ 可改
+l.add(4);      // ❌ UnsupportedOperationException
+// 想可变：
+List<Integer> mut = new ArrayList<>(Arrays.asList(1, 2, 3));
+
+// 坑 3：和原数组共享内存
+Integer[] arr = {1, 2, 3};
+List<Integer> view = Arrays.asList(arr);
+arr[0] = 99;            // view.get(0) 也变成 99
+```
+
+> 详细版见 [06 · 常见转换与陷阱](./06-conversions-and-pitfalls.md#二arraysaslist-三个大坑)。
 
 ---
 
@@ -117,6 +154,12 @@ s.equalsIgnoreCase(t);   // 忽略大小写
 | 转 char 数组 | `s.toCharArray()` |
 | 比较字典序 | `s.compareTo(t)` 返回负 / 0 / 正 |
 | 转数字 | `Integer.parseInt(s)` / `Long.parseLong(s)` |
+| 拼接（不用 sb） | `String.join(",", "a", "b")` / `String.join("-", list)` |
+| 格式化 | `String.format("%05d", 7)` → `"00007"`；`%.2f` 保留两位小数 |
+| 重复 | `"ab".repeat(3)` → `"ababab"`（Java 11+） |
+| 字符流 | `s.chars()` 返回 `IntStream`，直接 `.filter` / `.count` |
+| char[] → String | `new String(arr)` / `new String(arr, 0, len)` |
+| 值 → String | `String.valueOf(123)` / `String.valueOf('x')` |
 
 ### 3. 频次统计：`char` → `int` 数组
 
@@ -136,9 +179,13 @@ for (char c : s.toCharArray()) cnt[c - 'a']++;
 | 操作 | 写法 |
 |---|---|
 | 创建 | `StringBuilder sb = new StringBuilder();` |
+| 预分配容量 | `new StringBuilder(1024)` —— 已知大小时减少扩容 |
 | 拼接 | `sb.append("x")` / `sb.append(123)` / `sb.append('a')` |
 | 取字符 | `sb.charAt(i)` |
 | 改字符 | `sb.setCharAt(i, 'x')` |
+| 取子串 | `sb.substring(l, r)` —— `[l, r)`，返回 `String` |
+| 查找子串 | `sb.indexOf("ab")` / `sb.lastIndexOf("ab")` |
+| 替换区间 | `sb.replace(l, r, "xyz")` —— `[l, r)` 整段换掉 |
 | 删除最后一个 | `sb.deleteCharAt(sb.length() - 1)` |
 | 删除区间 | `sb.delete(l, r)` —— `[l, r)` |
 | 插入 | `sb.insert(i, "abc")` |

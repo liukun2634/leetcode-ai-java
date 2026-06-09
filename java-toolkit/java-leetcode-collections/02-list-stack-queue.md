@@ -15,18 +15,25 @@
 | 操作 | 写法 | 复杂度 |
 |---|---|---|
 | 创建 | `List<Integer> list = new ArrayList<>();` | - |
+| 预分配容量 | `new ArrayList<>(n)` | 已知大小时强烈推荐 |
+| 从集合拷贝 | `new ArrayList<>(otherCollection)` | O(n) |
+| 不可变字面量 | `List.of(1, 2, 3)` ⚠️ 定长且不能改 | Java 9+ |
 | 加到末尾 | `list.add(x)` | O(1) 摊还 |
 | 加到指定位置 | `list.add(i, x)` | O(n) |
+| 批量加入 | `list.addAll(other)` | O(k) |
 | 读 | `list.get(i)` | O(1) |
 | 改 | `list.set(i, x)` | O(1) |
 | 删指定位置 | `list.remove(i)` | O(n) |
 | 删指定值 | `list.remove(Integer.valueOf(x))` ⚠️ | O(n) |
+| 按条件删 | `list.removeIf(x -> x < 0)` | O(n)，避免迭代中手工删 |
+| 批量变换 | `list.replaceAll(x -> x * 2)` | O(n) |
 | 是否包含 | `list.contains(x)` | O(n) |
 | 长度 | `list.size()` | O(1) |
 | 末尾 | `list.get(list.size() - 1)` | O(1) |
 | 清空 | `list.clear()` | O(n) |
 | 转数组 | `list.toArray(new Integer[0])` | O(n) |
 | 子列表 | `list.subList(l, r)` —— `[l, r)`，**共享底层数组** | O(1) 视图 |
+| 排序 | `list.sort((x,y) -> x-y)` / `Collections.sort(list)` | O(n log n) |
 
 ### ⚠️ `remove(int)` vs `remove(Integer)`
 

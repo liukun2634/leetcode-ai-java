@@ -20,6 +20,28 @@ pq.isEmpty();
 
 > 同 `Queue`：**`offer/poll/peek` 空时返回 null / false**，别用 `add/remove/element`。
 
+### 高效初始化 —— O(n) heapify
+
+```java
+// ✅ 用集合构造 → 底层 O(n) heapify，比逐个 offer 的 O(n log n) 快
+PriorityQueue<Integer> pq = new PriorityQueue<>(Arrays.asList(3, 1, 4, 1, 5, 9));
+
+// ❌ 慢写法：逐个 offer 是 O(n log n)
+PriorityQueue<Integer> slow = new PriorityQueue<>();
+for (int x : arr) slow.offer(x);
+```
+
+> 注意：**带 comparator 的构造**要用 `new PriorityQueue<>(comparator)` 后再 `addAll(...)`，没有同时接 comparator + Collection 的构造器。
+
+### ⚠️ `pq.remove(Object)` / `pq.contains(Object)` 是 O(n)
+
+```java
+pq.remove(5);          // O(n) 线性扫，不是 O(log n)
+pq.contains(5);        // O(n)
+```
+
+> 想"删任意元素"的堆叫**懒删除堆**：维护 `Map<元素, 出现次数>`，弹堆顶时如果计数为 0 就丢掉再弹。或用 `TreeSet`/`TreeMap` 替代。
+
 ---
 
 ## 二、大顶堆 —— 三种写法
@@ -133,7 +155,66 @@ class MedianFinder {
 
 ---
 
-## 六、常见坑
+## 六、K 路归并模板（LC 23）
+
+> K 个有序链表合成一个，把每个链表的当前头节点扔进小顶堆，每次弹最小、续上 next。
+
+```java
+public ListNode mergeKLists(ListNode[] lists) {
+    PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+    for (ListNode h : lists) if (h != null) pq.offer(h);
+
+    ListNode dummy = new ListNode(0), cur = dummy;
+    while (!pq.isEmpty()) {
+        ListNode top = pq.poll();
+        cur.next = top;
+        cur = cur.next;
+        if (top.next != null) pq.offer(top.next);
+    }
+    return dummy.next;
+}
+```
+
+> 时间 O(N log K)，N 是所有节点总数。
+
+---
+
+## 七、Dijkstra 模板（最短路）
+
+> 边权非负的单源最短路。**堆里存 `(当前距离, 节点)`**，弹出即定。
+
+```java
+// graph: List<int[]>[] —— graph[u] 中每个 {v, w} 表示边 u→v 权重 w
+public int[] dijkstra(List<int[]>[] graph, int src) {
+    int n = graph.length;
+    int[] dist = new int[n];
+    Arrays.fill(dist, Integer.MAX_VALUE);
+    dist[src] = 0;
+
+    PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]); // {dist, node}
+    pq.offer(new int[]{0, src});
+
+    while (!pq.isEmpty()) {
+        int[] cur = pq.poll();
+        int d = cur[0], u = cur[1];
+        if (d > dist[u]) continue;          // 关键：过期项跳过
+        for (int[] e : graph[u]) {
+            int v = e[0], w = e[1];
+            if (d + w < dist[v]) {
+                dist[v] = d + w;
+                pq.offer(new int[]{dist[v], v});
+            }
+        }
+    }
+    return dist;
+}
+```
+
+> 时间 O((V + E) log V)。**不维护 visited 数组**，靠 `d > dist[u]` 跳过过期项即可。
+
+---
+
+## 八、常见坑
 
 | 坑 | 现象 | 解决 |
 |---|---|---|
@@ -144,7 +225,7 @@ class MedianFinder {
 
 ---
 
-## 七、回顾自测
+## 九、回顾自测
 
 1. `PriorityQueue` 默认是大顶堆还是小顶堆？
 2. 求**第 K 大**，应该用大小为 K 的**大顶堆**还是**小顶堆**？为什么？
