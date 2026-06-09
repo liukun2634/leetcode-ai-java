@@ -1,4 +1,4 @@
-# LeetCode 72. 编辑距离 (Edit Distance)
+# [LeetCode 72. 编辑距离 (Edit Distance)](https://leetcode.com/problems/edit-distance/)
 
 > 难度：Medium（其实是 🔴 难度的中等题）　|　标签：字符串、动态规划　|	|	**二维 DP 天花板 ⭐⭐⭐⭐**
 

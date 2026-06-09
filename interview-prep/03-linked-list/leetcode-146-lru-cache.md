@@ -1,4 +1,4 @@
-# LeetCode 146. LRU 缓存 (LRU Cache)
+# [LeetCode 146. LRU 缓存 (LRU Cache)](https://leetcode.com/problems/lru-cache/)
 
 > 难度：Medium　|　标签：设计、哈希表、双向链表　|	|	**设计题必考 ⭐⭐⭐⭐**
 

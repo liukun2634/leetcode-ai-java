@@ -1,4 +1,4 @@
-# LeetCode 1871. 跳跃游戏 VII (Jump Game VII)
+# [LeetCode 1871. 跳跃游戏 VII (Jump Game VII)](https://leetcode.com/problems/jump-game-vii/)
 
 > 难度：Medium　|　标签：字符串、动态规划、前缀和、滑动窗口、BFS
 

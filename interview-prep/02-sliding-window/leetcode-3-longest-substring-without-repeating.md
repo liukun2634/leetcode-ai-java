@@ -1,4 +1,4 @@
-# LeetCode 3. 无重复字符的最长子串 (Longest Substring Without Repeating Characters)
+# [LeetCode 3. 无重复字符的最长子串 (Longest Substring Without Repeating Characters)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 > 难度：Medium　|　标签：哈希表、字符串、滑动窗口　|　**滑动窗口模板题 ⭐⭐⭐**
 

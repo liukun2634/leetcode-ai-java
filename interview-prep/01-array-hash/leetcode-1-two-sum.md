@@ -1,4 +1,4 @@
-# LeetCode 1. 两数之和 (Two Sum)
+# [LeetCode 1. 两数之和 (Two Sum)](https://leetcode.com/problems/two-sum/)
 
 > 难度：Easy　|　标签：数组、哈希表　|　**面试出现频率 #1**
 

@@ -1,4 +1,4 @@
-# LeetCode 56. 合并区间 (Merge Intervals)
+# [LeetCode 56. 合并区间 (Merge Intervals)](https://leetcode.com/problems/merge-intervals/)
 
 > 难度：Medium　|　标签：数组、排序、贪心　|　**区间问题模板 ⭐⭐⭐**
 

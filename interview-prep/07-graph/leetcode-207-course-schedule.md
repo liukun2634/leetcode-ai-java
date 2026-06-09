@@ -1,4 +1,4 @@
-# LeetCode 207. 课程表 (Course Schedule)
+# [LeetCode 207. 课程表 (Course Schedule)](https://leetcode.com/problems/course-schedule/)
 
 > 难度：Medium　|　标签：图、拓扑排序、BFS、DFS　|　**拓扑排序模板 ⭐⭐⭐**
 

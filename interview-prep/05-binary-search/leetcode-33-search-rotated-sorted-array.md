@@ -1,4 +1,4 @@
-# LeetCode 33. 搜索旋转排序数组 (Search in Rotated Sorted Array)
+# [LeetCode 33. 搜索旋转排序数组 (Search in Rotated Sorted Array)](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 > 难度：Medium　|　标签：数组、二分查找　|　**二分变形必刷 ⭐⭐⭐**
 

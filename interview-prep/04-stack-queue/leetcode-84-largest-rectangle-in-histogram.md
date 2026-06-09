@@ -1,4 +1,4 @@
-# LeetCode 84. 柱状图中最大的矩形 (Largest Rectangle in Histogram)
+# [LeetCode 84. 柱状图中最大的矩形 (Largest Rectangle in Histogram)](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 > 难度：Hard　|　标签：栈、单调栈、数组　|	|	**单调栈天花板 ⭐⭐⭐⭐**
 

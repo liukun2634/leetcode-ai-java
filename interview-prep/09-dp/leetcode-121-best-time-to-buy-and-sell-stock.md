@@ -1,4 +1,4 @@
-# LeetCode 121. 买卖股票的最佳时机 (Best Time to Buy and Sell Stock)
+# [LeetCode 121. 买卖股票的最佳时机 (Best Time to Buy and Sell Stock)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 > 难度：Easy　|　标签：数组、动态规划、贪心　|	|	**贪心入门 ⭐⭐⭐**
 

@@ -1,4 +1,4 @@
-# LeetCode 295. 数据流的中位数 (Find Median from Data Stream)
+# [LeetCode 295. 数据流的中位数 (Find Median from Data Stream)](https://leetcode.com/problems/find-median-from-data-stream/)
 
 > 难度：Hard　|　标签：堆、设计、数据流　|	|	**双堆模板天花板 ⭐⭐⭐⭐**
 

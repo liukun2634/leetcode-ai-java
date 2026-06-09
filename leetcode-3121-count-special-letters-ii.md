@@ -1,4 +1,4 @@
-# LeetCode 3121. 统计特殊字母的数量 II (Count the Number of Special Characters II)
+# [LeetCode 3121. 统计特殊字母的数量 II (Count the Number of Special Characters II)](https://leetcode.com/problems/count-the-number-of-special-characters-ii/)
 
 > 难度：Medium　|　标签：哈希表、字符串、计数、一次遍历
 

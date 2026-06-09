@@ -1,4 +1,4 @@
-# LeetCode 42. 接雨水 (Trapping Rain Water)
+# [LeetCode 42. 接雨水 (Trapping Rain Water)](https://leetcode.com/problems/trapping-rain-water/)
 
 > 难度：Hard　|　标签：数组、双指针、单调栈、动态规划　|	|	**经典中的经典 ⭐⭐⭐⭐**
 

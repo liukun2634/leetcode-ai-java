@@ -1,4 +1,4 @@
-# LeetCode 128. 最长连续序列 (Longest Consecutive Sequence)
+# [LeetCode 128. 最长连续序列 (Longest Consecutive Sequence)](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 > 难度：Medium　|　标签：哈希表、并查集　|　**哈希优化经典 ⭐⭐⭐**
 

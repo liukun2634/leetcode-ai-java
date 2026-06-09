@@ -1,4 +1,4 @@
-# LeetCode 46. 全排列 (Permutations)
+# [LeetCode 46. 全排列 (Permutations)](https://leetcode.com/problems/permutations/)
 
 > 难度：Medium　|　标签：回溯、数组　|　**回溯模板天花板 ⭐⭐⭐**
 
