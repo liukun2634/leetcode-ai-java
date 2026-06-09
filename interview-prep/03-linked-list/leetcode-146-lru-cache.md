@@ -273,11 +273,30 @@ cache.get(4);       // 返回 4
 ### 一句话总结
 > **HashMap 给 O(1) 定位，双向链表给 O(1) 移动；头节点最近、尾节点最旧。**
 
-### 自我提问
-1. 为什么不用单链表？→ 删除中间节点需要 O(n) 找前驱；双向链表 O(1)。
-2. 节点为什么存 key？→ 逐出时要从 HashMap 里同步 `remove(key)`，必须知道 key。
-3. 用 `TreeMap`/`OrderedDict` 行吗？→ `OrderedDict`（Python）天然 O(1)；`TreeMap` 是有序 map 不是访问顺序。
-4. 怎么改成 **LFU**？→ LC 460，要再加一个"频率桶"链表；难度跃升。
+### 新手常见疑问（FAQ）
+
+**Q1：为什么不能用单链表？**
+A：需要在 O(1) 内删除中间任意节点。单链表删除需要从头走到前驱 O(n)；双向链表能直接 `node.prev.next = node.next`。
+
+**Q2：节点为什么要存 key 而不是只存 val？**
+A：逐出尾节点时需要同步从 HashMap 里删除。如果节点只存 val，不知道 key 是什么，无法 `map.remove(key)`。
+
+**Q3：为什么要 dummy head 和 dummy tail 两个哨兵？**
+A：避免边界判断。不加哨兵时，删除“唯一节点”“首节点”“尾节点”都要判 null，代码烦。加两个哨兵后任意节点都保证有 prev 和 next。
+
+**Q4：put 更新已存在 key 时忘了 moveToHead 会怎样？**
+A：该 key 的“最近使用顺序”不更新，可能被错误逐出。面试这是高频 bug，必须写上。
+
+**Q5：能不能用 `LinkedHashMap` 代替？**
+A：能，但 **面试多半要求手写**。LinkedHashMap 的 access-order 模式 + `removeEldestEntry` 钩子可 5 行 AC，起况面或作为亮点可以提。
+
+### 面试官常见 follow-up
+1. **"改成 LFU（最不常使用）？"** → 需要另加“频次桶”映射到双向链表，难度跳一级。即 **LC 460**。
+2. **"多线程安全的 LRU？"** → 外加 `ReentrantReadWriteLock`；或用 `ConcurrentLinkedHashMap` 三方库。面试可论如何避免锁粒度过粗。
+3. **"capacity 超过内存怎么办（分布式 LRU）？"** → 一致性哈希分片 + 本机 LRU；或用 Redis 的 `maxmemory-policy allkeys-lru`。
+4. **"需要记录 hit/miss 率？"** → 只需加两个计数器，get 中验证。面试常问“怎么量化缓存效果”。
+5. **"可不可以 expire（过期时间）？"** → 节点加 `long expireAt`，get 时检查过期则删；或背开后台扫描。
+6. **"capacity 动态调整？"** → 提供 `resize(int cap)`，变小时循环 `removeTail`；变大无需动作。
 
 ### 同类型推荐（**设计题 + 双向链表家族**）
 - LC 460. LFU 缓存（频率桶 + 双向链表，🔴）
