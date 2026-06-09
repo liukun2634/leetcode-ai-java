@@ -1,4 +1,4 @@
-# [LeetCode 875. 爱吃香蕉的珂珂 (Koko Eating Bananas)](https://leetcode.com/problems/koko-eating-bananas/)
+# LeetCode 875. 爱吃香蕉的珂珂 (Koko Eating Bananas)
 
 > 难度：Medium　|　标签：数组、二分查找、答案二分　|　**答案二分模板 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 | `piles=[3,6,7,11], h=8` | `4` |
 | `piles=[30,11,23,4,20], h=5` | `30` |
 | `piles=[30,11,23,4,20], h=6` | `23` |
+
+题目链接：<https://leetcode.cn/problems/koko-eating-bananas/>
 
 ---
 

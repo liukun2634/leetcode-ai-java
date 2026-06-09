@@ -1,4 +1,4 @@
-# [LeetCode 739. 每日温度 (Daily Temperatures)](https://leetcode.com/problems/daily-temperatures/)
+# LeetCode 739. 每日温度 (Daily Temperatures)
 
 > 难度：Medium　|　标签：栈、单调栈、数组　|　**单调栈入门 ⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 | `[73,74,75,71,69,72,76,73]` | `[1,1,4,2,1,1,0,0]` |
 | `[30,40,50,60]` | `[1,1,1,0]` |
 | `[30,60,90]` | `[1,1,0]` |
+
+题目链接：<https://leetcode.cn/problems/daily-temperatures/>
 
 ---
 

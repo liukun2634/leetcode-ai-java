@@ -1,4 +1,4 @@
-# [LeetCode 460. LFU 缓存 (LFU Cache)](https://leetcode.com/problems/lfu-cache/)
+# LeetCode 460. LFU 缓存 (LFU Cache)
 
 > 难度：Hard　|　标签：设计、哈希、双向链表　|　**LRU 升级版 ⭐⭐⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 - `1 <= capacity <= 10^4`
 - `0 <= key, value <= 10^9`
 - 调用次数 `≤ 2 * 10^5`
+
+题目链接：<https://leetcode.cn/problems/lfu-cache/>
 
 ---
 

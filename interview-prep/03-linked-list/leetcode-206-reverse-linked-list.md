@@ -1,4 +1,4 @@
-# [LeetCode 206. 反转链表 (Reverse Linked List)](https://leetcode.com/problems/reverse-linked-list/)
+# LeetCode 206. 反转链表 (Reverse Linked List)
 
 > 难度：Easy　|　标签：链表、递归、双指针　|　**链表入门必背 ⭐⭐⭐**
 
@@ -18,6 +18,8 @@
 输入：1 → 2 → 3 → 4 → 5 → null
 输出：5 → 4 → 3 → 2 → 1 → null
 ```
+
+题目链接：<https://leetcode.cn/problems/reverse-linked-list/>
 
 ---
 

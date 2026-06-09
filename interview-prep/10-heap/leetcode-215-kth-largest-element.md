@@ -1,4 +1,4 @@
-# [LeetCode 215. 数组中的第 K 个最大元素 (Kth Largest Element in an Array)](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+# LeetCode 215. 数组中的第 K 个最大元素 (Kth Largest Element in an Array)
 
 > 难度：Medium　|　标签：堆、快速选择、分治　|　**TopK 模板 ⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 |---|---|
 | `nums=[3,2,1,5,6,4], k=2` | `5` |
 | `nums=[3,2,3,1,2,4,5,5,6], k=4` | `4` |
+
+题目链接：<https://leetcode.cn/problems/kth-largest-element-in-an-array/>
 
 ---
 

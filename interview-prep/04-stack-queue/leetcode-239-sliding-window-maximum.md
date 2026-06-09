@@ -1,4 +1,4 @@
-# [LeetCode 239. 滑动窗口最大值 (Sliding Window Maximum)](https://leetcode.com/problems/sliding-window-maximum/)
+# LeetCode 239. 滑动窗口最大值 (Sliding Window Maximum)
 
 > 难度：Hard　|　标签：队列、单调队列、滑动窗口　|	|	**单调队列模板 ⭐⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 |---|---|
 | `nums=[1,3,-1,-3,5,3,6,7], k=3` | `[3,3,5,5,6,7]` |
 | `nums=[1], k=1` | `[1]` |
+
+题目链接：<https://leetcode.cn/problems/sliding-window-maximum/>
 
 ---
 

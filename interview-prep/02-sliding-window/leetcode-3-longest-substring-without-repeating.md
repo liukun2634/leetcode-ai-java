@@ -1,4 +1,4 @@
-# [LeetCode 3. 无重复字符的最长子串 (Longest Substring Without Repeating Characters)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+# LeetCode 3. 无重复字符的最长子串 (Longest Substring Without Repeating Characters)
 
 > 难度：Medium　|　标签：哈希表、字符串、滑动窗口　|　**滑动窗口模板题 ⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 | `"abcabcbb"` | `3`  | `"abc"` |
 | `"bbbbb"` | `1` | `"b"` |
 | `"pwwkew"` | `3` | `"wke"`（不是 "pwke"，子串要连续） |
+
+题目链接：<https://leetcode.cn/problems/longest-substring-without-repeating-characters/>
 
 ---
 

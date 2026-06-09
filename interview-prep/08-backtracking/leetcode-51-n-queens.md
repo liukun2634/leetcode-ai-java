@@ -1,4 +1,4 @@
-# [LeetCode 51. N 皇后 (N-Queens)](https://leetcode.com/problems/n-queens/)
+# LeetCode 51. N 皇后 (N-Queens)
 
 > 难度：Hard　|　标签：回溯、剪枝　|　**回溯剪枝天花板 ⭐⭐⭐⭐**
 
@@ -25,6 +25,8 @@
   ["..Q.","Q...","...Q",".Q.."]
 ]
 ```
+
+题目链接：<https://leetcode.cn/problems/n-queens/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 124. 二叉树中的最大路径和 (Binary Tree Maximum Path Sum)](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+# LeetCode 124. 二叉树中的最大路径和 (Binary Tree Maximum Path Sum)
 
 > 难度：Hard　|　标签：树、DFS、动态规划　|	|	**树形 DP 天花板 ⭐⭐⭐⭐**
 
@@ -32,6 +32,8 @@
            15  7
 输出：42（路径 15 → 20 → 7）
 ```
+
+题目链接：<https://leetcode.cn/problems/binary-tree-maximum-path-sum/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 4. 寻找两个正序数组的中位数 (Median of Two Sorted Arrays)](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+# LeetCode 4. 寻找两个正序数组的中位数 (Median of Two Sorted Arrays)
 
 > 难度：Hard　|　标签：数组、二分查找、分治　|　**双数组二分天花板 ⭐⭐⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 |---|---|
 | `nums1=[1,3], nums2=[2]` | `2.0` |
 | `nums1=[1,2], nums2=[3,4]` | `2.5` |
+
+题目链接：<https://leetcode.cn/problems/median-of-two-sorted-arrays/>
 
 ---
 

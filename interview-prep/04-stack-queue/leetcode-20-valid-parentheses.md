@@ -1,4 +1,4 @@
-# [LeetCode 20. 有效的括号 (Valid Parentheses)](https://leetcode.com/problems/valid-parentheses/)
+# LeetCode 20. 有效的括号 (Valid Parentheses)
 
 > 难度：Easy　|　标签：栈、字符串　|　**栈入门必刷 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 | `"(]"` | `false` |
 | `"([)]"` | `false` |
 | `"{[]}"` | `true` |
+
+题目链接：<https://leetcode.cn/problems/valid-parentheses/>
 
 ---
 

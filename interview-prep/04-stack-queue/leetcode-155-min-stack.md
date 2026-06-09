@@ -1,4 +1,4 @@
-# [LeetCode 155. 最小栈 (Min Stack)](https://leetcode.com/problems/min-stack/)
+# LeetCode 155. 最小栈 (Min Stack)
 
 > 难度：Medium　|　标签：栈、设计　|　**辅助栈设计经典 ⭐⭐⭐**
 
@@ -19,6 +19,8 @@
 
 - `-2^31 <= val <= 2^31 - 1`
 - pop、top、getMin 总是在非空栈上调用
+
+题目链接：<https://leetcode.cn/problems/min-stack/>
 
 ---
 

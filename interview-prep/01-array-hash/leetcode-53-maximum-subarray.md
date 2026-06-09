@@ -1,4 +1,4 @@
-# [LeetCode 53. 最大子数组和 (Maximum Subarray)](https://leetcode.com/problems/maximum-subarray/)
+# LeetCode 53. 最大子数组和 (Maximum Subarray)
 
 > 难度：Medium　|　标签：数组、动态规划、贪心、分治　|　**DP 入门必刷 ⭐**
 
@@ -20,6 +20,8 @@
 | `[-2,1,-3,4,-1,2,1,-5,4]` | `6` | `[4,-1,2,1]` |
 | `[1]` | `1` | `[1]` |
 | `[5,4,-1,7,8]` | `23` | 全数组 |
+
+题目链接：<https://leetcode.cn/problems/maximum-subarray/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 55. 跳跃游戏 (Jump Game)](https://leetcode.com/problems/jump-game/)
+# LeetCode 55. 跳跃游戏 (Jump Game)
 
 > 难度：Medium　|　标签：数组、贪心、动态规划　|　**贪心 vs DP 经典对比 ⭐⭐⭐**
 
@@ -22,6 +22,8 @@
 | `[2,3,1,1,4]` | `true`（0→1→4）|
 | `[3,2,1,0,4]` | `false`（卡在 3 跳不到 4）|
 | `[0]` | `true`（起点即终点）|
+
+题目链接：<https://leetcode.cn/problems/jump-game/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 295. 数据流的中位数 (Find Median from Data Stream)](https://leetcode.com/problems/find-median-from-data-stream/)
+# LeetCode 295. 数据流的中位数 (Find Median from Data Stream)
 
 > 难度：Hard　|　标签：堆、设计、数据流　|	|	**双堆模板天花板 ⭐⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 **进阶**：
 1. 如果数据流中所有整数都在 `[0, 100]` 范围内，你将如何优化算法？
 2. 如果数据流中 `99%` 的整数都在 `[0, 100]` 范围内，你将如何优化算法？
+
+题目链接：<https://leetcode.cn/problems/find-median-from-data-stream/>
 
 ---
 

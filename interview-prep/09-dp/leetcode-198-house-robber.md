@@ -1,4 +1,4 @@
-# [LeetCode 198. 打家劫舍 (House Robber)](https://leetcode.com/problems/house-robber/)
+# LeetCode 198. 打家劫舍 (House Robber)
 
 > 难度：Medium　|　标签：动态规划　|	|	**DP 入门第二题 ⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 |---|---|---|
 | `[1,2,3,1]` | `4` | 偷 1 和 3：`1+3` |
 | `[2,7,9,3,1]` | `12` | 偷 1,3,5：`2+9+1` |
+
+题目链接：<https://leetcode.cn/problems/house-robber/>
 
 ---
 

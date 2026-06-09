@@ -1,4 +1,4 @@
-# [LeetCode 200. 岛屿数量 (Number of Islands)](https://leetcode.com/problems/number-of-islands/)
+# LeetCode 200. 岛屿数量 (Number of Islands)
 
 > 难度：Medium　|　标签：DFS、BFS、并查集、网格　|　**网格搜索必刷 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 ]
 ```
 输出：`3`
+
+题目链接：<https://leetcode.cn/problems/number-of-islands/>
 
 ---
 

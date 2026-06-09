@@ -1,4 +1,4 @@
-# [LeetCode 994. 腐烂的橘子 (Rotting Oranges)](https://leetcode.com/problems/rotting-oranges/)
+# LeetCode 994. 腐烂的橘子 (Rotting Oranges)
 
 > 难度：Medium　|　标签：图、BFS、多源 BFS、网格　|　**多源 BFS 模板 ⭐⭐⭐**
 
@@ -27,6 +27,8 @@
 | `[[2,1,1],[1,1,0],[0,1,1]]` | `4` |
 | `[[2,1,1],[0,1,1],[1,0,1]]` | `-1`（左下角的 1 隔绝） |
 | `[[0,2]]` | `0`（没有新鲜橘子） |
+
+题目链接：<https://leetcode.cn/problems/rotting-oranges/>
 
 ---
 

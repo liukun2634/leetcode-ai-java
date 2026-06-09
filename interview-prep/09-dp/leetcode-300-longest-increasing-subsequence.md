@@ -1,4 +1,4 @@
-# [LeetCode 300. 最长递增子序列 (Longest Increasing Subsequence)](https://leetcode.com/problems/longest-increasing-subsequence/)
+# LeetCode 300. 最长递增子序列 (Longest Increasing Subsequence)
 
 > 难度：Medium　|　标签：动态规划、二分查找、贪心　|　**LIS 模板 ⭐⭐⭐**
 
@@ -24,6 +24,8 @@
 | `[10,9,2,5,3,7,101,18]` | `4` | `[2,3,7,101]` |
 | `[0,1,0,3,2,3]` | `4` | `[0,1,2,3]` |
 | `[7,7,7,7,7,7,7]` | `1` | `[7]` |
+
+题目链接：<https://leetcode.cn/problems/longest-increasing-subsequence/>
 
 ---
 

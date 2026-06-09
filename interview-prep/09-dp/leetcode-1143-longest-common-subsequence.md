@@ -1,4 +1,4 @@
-# [LeetCode 1143. 最长公共子序列 (Longest Common Subsequence)](https://leetcode.com/problems/longest-common-subsequence/)
+# LeetCode 1143. 最长公共子序列 (Longest Common Subsequence)
 
 > 难度：Medium　|　标签：字符串、动态规划　|　**双串 DP 模板姊妹题 ⭐⭐⭐⭐**
 
@@ -22,6 +22,8 @@
 | `"abcde", "ace"` | `3` | "ace" |
 | `"abc", "abc"` | `3` | "abc" |
 | `"abc", "def"` | `0` | "" |
+
+题目链接：<https://leetcode.cn/problems/longest-common-subsequence/>
 
 ---
 

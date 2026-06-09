@@ -1,4 +1,4 @@
-# [LeetCode 49. 字母异位词分组 (Group Anagrams)](https://leetcode.com/problems/group-anagrams/)
+# LeetCode 49. 字母异位词分组 (Group Anagrams)
 
 > 难度：Medium　|　标签：哈希表、字符串、排序　|　**哈希分组模板 ⭐⭐**
 
@@ -21,6 +21,8 @@
 | `["eat","tea","tan","ate","nat","bat"]` | `[["bat"],["nat","tan"],["ate","eat","tea"]]` |
 | `[""]` | `[[""]]` |
 | `["a"]` | `[["a"]]` |
+
+题目链接：<https://leetcode.cn/problems/group-anagrams/>
 
 ---
 

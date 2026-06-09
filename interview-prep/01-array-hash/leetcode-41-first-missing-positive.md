@@ -1,4 +1,4 @@
-# [LeetCode 41. 缺失的第一个正数 (First Missing Positive)](https://leetcode.com/problems/first-missing-positive/)
+# LeetCode 41. 缺失的第一个正数 (First Missing Positive)
 
 > 难度：Hard　|　标签：数组、原地哈希　|　**原地哈希天花板 ⭐⭐⭐⭐**
 
@@ -22,6 +22,8 @@
 | `[1,2,0]` | `3` |
 | `[3,4,-1,1]` | `2` |
 | `[7,8,9,11,12]` | `1` |
+
+题目链接：<https://leetcode.cn/problems/first-missing-positive/>
 
 ---
 

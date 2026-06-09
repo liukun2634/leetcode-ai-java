@@ -1,4 +1,4 @@
-# [LeetCode 70. 爬楼梯 (Climbing Stairs)](https://leetcode.com/problems/climbing-stairs/)
+# LeetCode 70. 爬楼梯 (Climbing Stairs)
 
 > 难度：Easy　|　标签：动态规划、数学　|　**DP 入门第一题 ⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 | `n = 2` | `2` | 1+1 / 2 |
 | `n = 3` | `3` | 1+1+1 / 1+2 / 2+1 |
 | `n = 4` | `5` | 1+1+1+1 / 1+1+2 / 1+2+1 / 2+1+1 / 2+2 |
+
+题目链接：<https://leetcode.cn/problems/climbing-stairs/>
 
 ---
 

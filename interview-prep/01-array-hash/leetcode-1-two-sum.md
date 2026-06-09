@@ -1,4 +1,4 @@
-# [LeetCode 1. 两数之和 (Two Sum)](https://leetcode.com/problems/two-sum/)
+# LeetCode 1. 两数之和 (Two Sum)
 
 > 难度：Easy　|　标签：数组、哈希表　|　**面试出现频率 #1**
 
@@ -20,6 +20,8 @@
 |---|---|
 | `nums = [2,7,11,15], target = 9` | `[0,1]` |
 | `nums = [3,2,4], target = 6` | `[1,2]` |
+
+题目链接：<https://leetcode.cn/problems/two-sum/>
 
 ---
 

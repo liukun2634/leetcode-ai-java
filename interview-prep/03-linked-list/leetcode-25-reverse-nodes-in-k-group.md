@@ -1,4 +1,4 @@
-# [LeetCode 25. K 个一组翻转链表 (Reverse Nodes in K-Group)](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+# LeetCode 25. K 个一组翻转链表 (Reverse Nodes in K-Group)
 
 > 难度：Hard　|　标签：链表、递归　|　**链表反转进阶 ⭐⭐⭐⭐**
 
@@ -26,6 +26,8 @@
 输入：1→2→3→4→5, k=3
 输出：3→2→1→4→5
 ```
+
+题目链接：<https://leetcode.cn/problems/reverse-nodes-in-k-group/>
 
 ---
 

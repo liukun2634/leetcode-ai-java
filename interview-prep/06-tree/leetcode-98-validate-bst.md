@@ -1,4 +1,4 @@
-# [LeetCode 98. 验证二叉搜索树 (Validate Binary Search Tree)](https://leetcode.com/problems/validate-binary-search-tree/)
+# LeetCode 98. 验证二叉搜索树 (Validate Binary Search Tree)
 
 > 难度：Medium　|　标签：树、BST、DFS、递归　|　**BST 性质考查 ⭐⭐⭐**
 
@@ -28,6 +28,8 @@
                             3   6
 输出：true              输出：false（4 在 5 的右子树却 < 5，且 3 在 5 的右子树却 < 5）
 ```
+
+题目链接：<https://leetcode.cn/problems/validate-binary-search-tree/>
 
 ---
 

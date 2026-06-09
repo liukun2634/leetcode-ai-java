@@ -1,4 +1,4 @@
-# [LeetCode 236. 二叉树的最近公共祖先 (Lowest Common Ancestor)](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+# LeetCode 236. 二叉树的最近公共祖先 (Lowest Common Ancestor)
 
 > 难度：Medium　|　标签：树、DFS、递归　|　**树递归思维天花板 ⭐⭐⭐**
 
@@ -31,6 +31,8 @@
 |---|---|---|---|
 | 5 | 1 | 3 | 分别在左右子树 |
 | 5 | 4 | 5 | p 本身是 q 的祖先 |
+
+题目链接：<https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 322. 零钱兑换 (Coin Change)](https://leetcode.com/problems/coin-change/)
+# LeetCode 322. 零钱兑换 (Coin Change)
 
 > 难度：Medium　|　标签：动态规划、完全背包　|　**DP 必刷 ⭐⭐⭐**
 
@@ -24,6 +24,8 @@
 | `coins=[1,2,5], amount=11` | `3` | 11 = 5+5+1 |
 | `coins=[2], amount=3` | `-1` | 无法凑出 |
 | `coins=[1], amount=0` | `0` | 不需要硬币 |
+
+题目链接：<https://leetcode.cn/problems/coin-change/>
 
 ---
 

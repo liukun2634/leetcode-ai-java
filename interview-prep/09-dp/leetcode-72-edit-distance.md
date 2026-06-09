@@ -1,4 +1,4 @@
-# [LeetCode 72. 编辑距离 (Edit Distance)](https://leetcode.com/problems/edit-distance/)
+# LeetCode 72. 编辑距离 (Edit Distance)
 
 > 难度：Medium（其实是 🔴 难度的中等题）　|　标签：字符串、动态规划　|	|	**二维 DP 天花板 ⭐⭐⭐⭐**
 
@@ -23,6 +23,8 @@
 |---|---|---|
 | `horse, ros` | `3` | horse→rorse(替换)→rose(删除)→ros(删除) |
 | `intention, execution` | `5` | 多步替换 |
+
+题目链接：<https://leetcode.cn/problems/edit-distance/>
 
 ---
 

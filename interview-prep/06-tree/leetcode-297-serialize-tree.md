@@ -1,4 +1,4 @@
-# [LeetCode 297. 二叉树的序列化与反序列化 (Serialize and Deserialize Binary Tree)](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+# LeetCode 297. 二叉树的序列化与反序列化 (Serialize and Deserialize Binary Tree)
 
 > 难度：Hard　|　标签：树、设计、BFS、DFS　|　**树编码经典 ⭐⭐⭐⭐**
 
@@ -20,6 +20,8 @@
 输入：root = [1,2,3,null,null,4,5]
 输出：[1,2,3,null,null,4,5]   // 任何能往返成原树的格式都算对
 ```
+
+题目链接：<https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/>
 
 ---
 

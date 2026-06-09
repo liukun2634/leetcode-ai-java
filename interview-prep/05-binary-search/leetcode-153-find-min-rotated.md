@@ -1,4 +1,4 @@
-# [LeetCode 153. 寻找旋转排序数组中的最小值 (Find Minimum in Rotated Sorted Array)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+# LeetCode 153. 寻找旋转排序数组中的最小值 (Find Minimum in Rotated Sorted Array)
 
 > 难度：Medium　|　标签：数组、二分查找　|　**旋转数组对偶题 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 | `[3,4,5,1,2]` | `1` |
 | `[4,5,6,7,0,1,2]` | `0` |
 | `[11,13]` | `11` |
+
+题目链接：<https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/>
 
 ---
 

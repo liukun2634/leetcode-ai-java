@@ -1,4 +1,4 @@
-# [LeetCode 11. 盛最多水的容器 (Container With Most Water)](https://leetcode.com/problems/container-with-most-water/)
+# LeetCode 11. 盛最多水的容器 (Container With Most Water)
 
 > 难度：Medium　|　标签：数组、双指针、贪心　|　**双指针入门 ⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 |---|---|
 | `[1,8,6,2,5,4,8,3,7]` | `49`（i=1,j=8，宽 7 × 高 min(8,7)=7） |
 | `[1,1]` | `1` |
+
+题目链接：<https://leetcode.cn/problems/container-with-most-water/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 22. 括号生成 (Generate Parentheses)](https://leetcode.com/problems/generate-parentheses/)
+# LeetCode 22. 括号生成 (Generate Parentheses)
 
 > 难度：Medium　|　标签：回溯、剪枝　|	|	**回溯剪枝模板 ⭐⭐⭐**
 
@@ -18,6 +18,8 @@
 |---|---|
 | `n = 3` | `["((()))","(()())","(())()","()(())","()()()"]` |
 | `n = 1` | `["()"]` |
+
+题目链接：<https://leetcode.cn/problems/generate-parentheses/>
 
 ---
 

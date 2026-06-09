@@ -1,4 +1,4 @@
-# [LeetCode 208. 实现 Trie (前缀树) (Implement Trie / Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+# LeetCode 208. 实现 Trie (前缀树) (Implement Trie / Prefix Tree)
 
 > 难度：Medium　|　标签：字典树、设计　|　**Trie 模板 ⭐⭐⭐**
 
@@ -29,6 +29,8 @@ trie.startsWith("app");  // true
 trie.insert("app");
 trie.search("app");      // true
 ```
+
+题目链接：<https://leetcode.cn/problems/implement-trie-prefix-tree/>
 
 ---
 

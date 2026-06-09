@@ -1,4 +1,4 @@
-# [LeetCode 547. 省份数量 (Number of Provinces)](https://leetcode.com/problems/number-of-provinces/)
+# LeetCode 547. 省份数量 (Number of Provinces)
 
 > 难度：Medium　|　标签：图、DFS、BFS、并查集　|　**连通分量基础 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 |---|---|
 | `[[1,1,0],[1,1,0],[0,0,1]]` | `2` |
 | `[[1,0,0],[0,1,0],[0,0,1]]` | `3` |
+
+题目链接：<https://leetcode.cn/problems/number-of-provinces/>
 
 ---
 

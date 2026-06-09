@@ -1,4 +1,4 @@
-# [LeetCode 21. 合并两个有序链表 (Merge Two Sorted Lists)](https://leetcode.com/problems/merge-two-sorted-lists/)
+# LeetCode 21. 合并两个有序链表 (Merge Two Sorted Lists)
 
 > 难度：Easy　|　标签：链表、递归　|	|	**dummy 头模板必背 ⭐⭐⭐**
 
@@ -19,6 +19,8 @@
       list2 = 1 → 3 → 4
 输出：1 → 1 → 2 → 3 → 4 → 4
 ```
+
+题目链接：<https://leetcode.cn/problems/merge-two-sorted-lists/>
 
 ---
 

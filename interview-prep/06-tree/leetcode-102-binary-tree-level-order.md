@@ -1,4 +1,4 @@
-# [LeetCode 102. 二叉树的层序遍历 (Binary Tree Level Order Traversal)](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+# LeetCode 102. 二叉树的层序遍历 (Binary Tree Level Order Traversal)
 
 > 难度：Medium　|　标签：树、BFS、队列　|　**BFS 模板题 ⭐⭐⭐**
 
@@ -24,6 +24,8 @@
 
 输出：[[3], [9,20], [15,7]]
 ```
+
+题目链接：<https://leetcode.cn/problems/binary-tree-level-order-traversal/>
 
 ---
 

@@ -1,4 +1,4 @@
-# [LeetCode 210. 课程表 II (Course Schedule II)](https://leetcode.com/problems/course-schedule-ii/)
+# LeetCode 210. 课程表 II (Course Schedule II)
 
 > 难度：Medium　|　标签：图、拓扑排序、BFS、DFS　|　**拓扑排序返回顺序 ⭐⭐⭐**
 
@@ -22,6 +22,8 @@
 | `numCourses=2, prerequisites=[[1,0]]` | `[0,1]` |
 | `numCourses=4, prerequisites=[[1,0],[2,0],[3,1],[3,2]]` | `[0,1,2,3]` 或 `[0,2,1,3]` |
 | `numCourses=1` | `[0]` |
+
+题目链接：<https://leetcode.cn/problems/course-schedule-ii/>
 
 ---
 

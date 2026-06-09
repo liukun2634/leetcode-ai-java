@@ -1,4 +1,4 @@
-# [LeetCode 347. 前 K 个高频元素 (Top K Frequent Elements)](https://leetcode.com/problems/top-k-frequent-elements/)
+# LeetCode 347. 前 K 个高频元素 (Top K Frequent Elements)
 
 > 难度：Medium　|　标签：哈希、堆、桶排序、快速选择　|　**TopK 频次模板 ⭐⭐⭐**
 
@@ -22,6 +22,8 @@
 |---|---|
 | `nums=[1,1,1,2,2,3], k=2` | `[1, 2]` |
 | `nums=[1], k=1` | `[1]` |
+
+题目链接：<https://leetcode.cn/problems/top-k-frequent-elements/>
 
 ---
 

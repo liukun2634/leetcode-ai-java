@@ -1,4 +1,4 @@
-# [LeetCode 76. 最小覆盖子串 (Minimum Window Substring)](https://leetcode.com/problems/minimum-window-substring/)
+# LeetCode 76. 最小覆盖子串 (Minimum Window Substring)
 
 > 难度：Hard　|　标签：哈希表、字符串、滑动窗口　|	|	**滑动窗口天花板 ⭐⭐⭐⭐**
 
@@ -24,6 +24,8 @@
 | `s="ADOBECODEBANC", t="ABC"` | `"BANC"` | |
 | `s="a", t="a"` | `"a"` | |
 | `s="a", t="aa"` | `""` | 缺一个 a |
+
+题目链接：<https://leetcode.cn/problems/minimum-window-substring/>
 
 ---
 

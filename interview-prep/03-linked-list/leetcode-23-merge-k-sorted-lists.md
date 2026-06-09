@@ -1,4 +1,4 @@
-# [LeetCode 23. 合并 K 个升序链表 (Merge K Sorted Lists)](https://leetcode.com/problems/merge-k-sorted-lists/)
+# LeetCode 23. 合并 K 个升序链表 (Merge K Sorted Lists)
 
 > 难度：Hard　|　标签：链表、堆、分治　|　**K 路合并模板 ⭐⭐⭐⭐**
 
@@ -19,6 +19,8 @@
 输入：[[1,4,5], [1,3,4], [2,6]]
 输出：[1,1,2,3,4,4,5,6]
 ```
+
+题目链接：<https://leetcode.cn/problems/merge-k-sorted-lists/>
 
 ---
 

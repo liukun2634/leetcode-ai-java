@@ -1,4 +1,4 @@
-# [LeetCode 122. 买卖股票的最佳时机 II (Best Time to Buy and Sell Stock II)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+# LeetCode 122. 买卖股票的最佳时机 II (Best Time to Buy and Sell Stock II)
 
 > 难度：Medium　|　标签：数组、贪心、动态规划　|　**股票系列入门 ⭐⭐⭐**
 
@@ -24,6 +24,8 @@
 | `[7,1,5,3,6,4]` | `7` | 1→5 赚 4，3→6 赚 3 |
 | `[1,2,3,4,5]` | `4` | 1→5 一次完成 |
 | `[7,6,4,3,1]` | `0` | 不交易 |
+
+题目链接：<https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/>
 
 ---
 

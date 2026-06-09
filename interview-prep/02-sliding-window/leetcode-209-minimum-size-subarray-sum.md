@@ -1,4 +1,4 @@
-# [LeetCode 209. 长度最小的子数组 (Minimum Size Subarray Sum)](https://leetcode.com/problems/minimum-size-subarray-sum/)
+# LeetCode 209. 长度最小的子数组 (Minimum Size Subarray Sum)
 
 > 难度：Medium　|　标签：数组、滑动窗口、前缀和　|　**变长窗口求最短模板 ⭐⭐⭐**
 
@@ -21,6 +21,8 @@
 | `target=7, nums=[2,3,1,2,4,3]` | `2`（`[4,3]`）|
 | `target=4, nums=[1,4,4]` | `1` |
 | `target=11, nums=[1,1,1,1,1,1,1]` | `0` |
+
+题目链接：<https://leetcode.cn/problems/minimum-size-subarray-sum/>
 
 ---
 

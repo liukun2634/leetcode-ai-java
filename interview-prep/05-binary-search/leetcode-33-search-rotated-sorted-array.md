@@ -1,4 +1,4 @@
-# [LeetCode 33. 搜索旋转排序数组 (Search in Rotated Sorted Array)](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+# LeetCode 33. 搜索旋转排序数组 (Search in Rotated Sorted Array)
 
 > 难度：Medium　|　标签：数组、二分查找　|　**二分变形必刷 ⭐⭐⭐**
 
@@ -23,6 +23,8 @@
 | `nums = [4,5,6,7,0,1,2], target = 0` | `4` |
 | `nums = [4,5,6,7,0,1,2], target = 3` | `-1` |
 | `nums = [1], target = 0` | `-1` |
+
+题目链接：<https://leetcode.cn/problems/search-in-rotated-sorted-array/>
 
 ---
 

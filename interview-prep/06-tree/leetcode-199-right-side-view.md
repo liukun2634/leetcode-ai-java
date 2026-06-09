@@ -1,4 +1,4 @@
-# [LeetCode 199. 二叉树的右视图 (Binary Tree Right Side View)](https://leetcode.com/problems/binary-tree-right-side-view/)
+# LeetCode 199. 二叉树的右视图 (Binary Tree Right Side View)
 
 > 难度：Medium　|　标签：树、BFS、DFS　|　**层序遍历变种 ⭐⭐⭐**
 
@@ -23,6 +23,8 @@
 
 输出：[1, 3, 4]
 ```
+
+题目链接：<https://leetcode.cn/problems/binary-tree-right-side-view/>
 
 ---
 

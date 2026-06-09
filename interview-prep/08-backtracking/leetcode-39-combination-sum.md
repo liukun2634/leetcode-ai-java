@@ -1,4 +1,4 @@
-# [LeetCode 39. 组合总和 (Combination Sum)](https://leetcode.com/problems/combination-sum/)
+# LeetCode 39. 组合总和 (Combination Sum)
 
 > 难度：Medium　|　标签：数组、回溯　|　**回溯组合家族 ⭐⭐⭐**
 
@@ -25,6 +25,8 @@
 | `candidates=[2,3,6,7], target=7` | `[[2,2,3], [7]]` |
 | `candidates=[2,3,5], target=8` | `[[2,2,2,2], [2,3,3], [3,5]]` |
 | `candidates=[2], target=1` | `[]` |
+
+题目链接：<https://leetcode.cn/problems/combination-sum/>
 
 ---
 
