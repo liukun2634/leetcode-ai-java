@@ -226,25 +226,25 @@ A：回溯是主解（能推广到 LC 90 含重复、LC 77 固定大小等变体
 A：子集总数 2^n，n>30 会超出 int，但题目一般限 n ≤ 20 以保证可枚举。若 n 很大但只要“某些子集”，需重新制定问题。
 
 ### 面试官常见 follow-up
-1. **"含重复元素的子集（LC 90）？"** → 排序 + `i > start && nums[i]==nums[i-1]` 跳重。
-2. **"固定大小 k 的组合（LC 77）？"** → `path.size() == k` 才收集；可加剪枝 `i ≤ n - (k - path.size()) + 1`。
+1. **"含重复元素的子集（[LC 90](https://leetcode.cn/problems/subsets-ii/)）？"** → 排序 + `i > start && nums[i]==nums[i-1]` 跳重。
+2. **"固定大小 k 的组合（[LC 77](https://leetcode.cn/problems/combinations/)）？"** → `path.size() == k` 才收集；可加剪枝 `i ≤ n - (k - path.size()) + 1`。
 3. **"递增子序列（LC 491）？"** → 只选后位 ≥ path.last 的元素，同层用 Set 去重。
 4. **"求第 k 个子集？"** → 把 k 当作位掩码，按位压入元素。
 5. **"每个元素可选多次（多重集子集）？"** → 递归改为 `backtrack(i, ...)` 不是 `i+1`；需限制 path 总长避免无限。
-6. **"子集和为 target（LC 39/40）？"** → 加剪枝 `sum > target` 提前返回；LC 40 需去重。
+6. **"子集和为 target（[LC 39](https://leetcode.cn/problems/combination-sum/)/40）？"** → 加剪枝 `sum > target` 提前返回；[LC 40](https://leetcode.cn/problems/combination-sum-ii/) 需去重。
 
 ### 同类型推荐（**回溯三大金刚**）
 **子集**：
-- LC 78（本题）/ LC 90（含重复）/ LC 491（递增子序列）
+- [LC 78](https://leetcode.cn/problems/subsets/)（本题）/ [LC 90](https://leetcode.cn/problems/subsets-ii/)（含重复）/ LC 491（递增子序列）
 
 **组合**：
-- LC 77. 组合 / LC 39. 组合总和 / LC 40. 组合总和 II / LC 216. 组合总和 III
+- [LC 77. 组合 ](https://leetcode.cn/problems/combinations/)/ [LC 39. 组合总和 ](https://leetcode.cn/problems/combination-sum/)/ [LC 40. 组合总和 II ](https://leetcode.cn/problems/combination-sum-ii/)/ LC 216. 组合总和 III
 
 **排列**：
-- LC 46. 全排列 / LC 47. 全排列 II / LC 60. 排列序列
+- [LC 46. 全排列 ](https://leetcode.cn/problems/permutations/)/ [LC 47. 全排列 II ](https://leetcode.cn/problems/permutations-ii/)/ LC 60. 排列序列
 
 **字符串/网格**：
-- LC 17. 电话号码字母组合
-- LC 22. 括号生成
-- LC 131. 分割回文串
-- LC 79. 单词搜索
+- [LC 17. 电话号码字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
+- [LC 22. 括号生成](https://leetcode.cn/problems/generate-parentheses/)
+- [LC 131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
+- [LC 79. 单词搜索](https://leetcode.cn/problems/word-search/)

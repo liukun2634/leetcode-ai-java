@@ -180,19 +180,19 @@ A：`DIR` 改为 8 项 `{{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}}`
 A：静态查询首选 DFS（代码最短）；大网格备选 BFS（防爆栈）；动态增加陆地（LC 305）必须并查集。
 
 ### 面试官常见 follow-up
-1. **"岛屿的最大面积？"** → DFS 返回该连通块面积，取 max。即 **LC 695**。
+1. **"岛屿的最大面积？"** → DFS 返回该连通块面积，取 max。即 [**LC 695**](https://leetcode.cn/problems/max-area-of-island/)。
 2. **"岛屿的周长？"** → 每个陆地贡献±4，每个“陆陆邻”贡献±(-2)。O(mn) 一遍扫。即 **LC 463**。
-3. **"被围绕的区域（从边界的 O 反向染色）？"** → LC 130，边界开始 DFS 标记临时字符，最后扫一遍转换。
-4. **"多源 BFS（腐烂的橘子）？"** → 初始把所有腐橘子同时入队，层序扩展。即 **LC 994**。
-5. **"动态插入陆地，随时查岛个数（LC 305）？"** → 并查集 + count；插入时邻居是陆地则 union；count = 插入总数 - union 成功次数。
+3. **"被围绕的区域（从边界的 O 反向染色）？"** → [LC 130](https://leetcode.cn/problems/surrounded-regions/)，边界开始 DFS 标记临时字符，最后扫一遍转换。
+4. **"多源 BFS（腐烂的橘子）？"** → 初始把所有腐橘子同时入队，层序扩展。即 [**LC 994**](https://leetcode.cn/problems/rotting-oranges/)。
+5. **"动态插入陆地，随时查岛个数（[LC 305](https://leetcode.cn/problems/number-of-islands-ii/)）？"** → 并查集 + count；插入时邻居是陆地则 union；count = 插入总数 - union 成功次数。
 6. **"三维网格？"** → 方向数组加到 6 项（±x、±y、±z），逻辑不变。
 
 ### 同类型推荐（**网格搜索家族**）
-- LC 695. 岛屿的最大面积
+- [LC 695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)
 - LC 463. 岛屿的周长
-- LC 130. 被围绕的区域（从边界反向染色）
-- LC 417. 太平洋大西洋水流问题（双源 BFS/DFS）
-- LC 994. 腐烂的橘子（多源 BFS）
-- LC 1254. 统计封闭岛屿的数目
-- LC 305. 岛屿数量 II（**并查集** 在线版）
-- LC 547. 省份数量（无网格的并通分量）
+- [LC 130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)（从边界反向染色）
+- [LC 417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/)（双源 BFS/DFS）
+- [LC 994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)（多源 BFS）
+- [LC 1254. 统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/)
+- [LC 305. 岛屿数量 II](https://leetcode.cn/problems/number-of-islands-ii/)（**并查集** 在线版）
+- [LC 547. 省份数量](https://leetcode.cn/problems/number-of-provinces/)（无网格的并通分量）

@@ -198,17 +198,17 @@ A：答案就是所有不同元素。算法仍正确。
 A：频次第 k 高的元素只有一个候选，不会出现 "并列第 k" 的歧义。否则需要二级排序（如按值升序）。
 
 ### 面试官常见 follow-up
-1. **"前 K 高频单词（LC 692，并列时按字典序）？"** → 堆 Comparator 加二级排序。
-2. **"前 K 个最近原点（LC 973）？"** → 大顶堆按距离平方排序。
+1. **"前 K 高频单词（[LC 692](https://leetcode.cn/problems/top-k-frequent-words/)，并列时按字典序）？"** → 堆 Comparator 加二级排序。
+2. **"前 K 个最近原点（[LC 973](https://leetcode.cn/problems/k-closest-points-to-origin/)）？"** → 大顶堆按距离平方排序。
 3. **"流式数据，每来一个数报告 Top K？"** → 堆维护 K 大，O(log k)/次。
 4. **"K 很大（接近 n）怎么办？"** → 改用大顶堆或排序。
 5. **"低频前 K 个？"** → 大顶堆，逻辑对称。
 6. **"分布式：每台机器有部分数据，合并求全局 Top K？"** → 每台先算 local TopK，主节点合并堆。
 
 ### 同类型推荐（**TopK 家族**）
-- LC 215. 数组中第 K 个最大元素
-- LC 692. 前 K 个高频单词
-- LC 973. 最接近原点的 K 个点
-- LC 1046. 最后一块石头的重量（大顶堆模拟）
-- LC 295. 数据流的中位数（双堆）
-- LC 703. 数据流中的第 K 大元素
+- [LC 215. 数组中第 K 个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/)
+- [LC 692. 前 K 个高频单词](https://leetcode.cn/problems/top-k-frequent-words/)
+- [LC 973. 最接近原点的 K 个点](https://leetcode.cn/problems/k-closest-points-to-origin/)
+- [LC 1046. 最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/)（大顶堆模拟）
+- [LC 295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)（双堆）
+- [LC 703. 数据流中的第 K 大元素](https://leetcode.cn/problems/kth-largest-element-in-a-stream/)

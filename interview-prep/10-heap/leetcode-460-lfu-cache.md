@@ -272,9 +272,9 @@ A：能但 O(log n)，不达 O(1)。
 6. **"能否动态调整 capacity？"** → 提供 resize 方法，缩容时循环逐出。
 
 ### 同类型推荐（**缓存设计家族**）
-- LC 146. LRU 缓存
+- [LC 146. LRU 缓存](https://leetcode.cn/problems/lru-cache/)
 - LC 432. 全 O(1) 数据结构
-- LC 380. 常数时间插入、删除和获取随机元素
-- LC 295. 数据流的中位数（双堆）
+- [LC 380. 常数时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/)
+- [LC 295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)（双堆）
 - LC 1146. 快照数组
 - LC 588. 设计内存文件系统

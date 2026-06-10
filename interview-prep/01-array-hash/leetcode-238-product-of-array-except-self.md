@@ -190,9 +190,9 @@ A：题目保证所有前后缀乘积在 32 位范围内，`int` 够用。若面
 4. 推广到二维 / 三维？→ 类比：累乘前缀矩阵。
 
 ### 同类型推荐（**前后缀技巧家族**）
-- LC 42. 接雨水（前后缀最大值）
-- LC 152. 乘积最大子数组（维护 max/min）
-- LC 845. 数组中的最长山脉
-- LC 121. 买卖股票最佳时机（前缀 min）
-- LC 724. 寻找数组的中心下标（前后缀和相等）
-- LC 1685. 有序数组中差绝对值之和（前缀和）
+- [LC 42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)（前后缀最大值）
+- [LC 152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/)（维护 max/min）
+- [LC 845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/)
+- [LC 121. 买卖股票最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)（前缀 min）
+- [LC 724. 寻找数组的中心下标](https://leetcode.cn/problems/find-pivot-index/)（前后缀和相等）
+- [LC 1685. 有序数组中差绝对值之和](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/)（前缀和）

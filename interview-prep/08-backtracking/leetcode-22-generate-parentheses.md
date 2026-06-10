@@ -170,18 +170,18 @@ A：能：dp[i] = 所有 `(a)b` 的并集，其中 a 是 dp[j]、b 是 dp[i-1-j]
 A：递归中多加“需要闭合什么括号”的栈，能放左括号时压入对应右括号，放右括号时必须与栈顶匹配。
 
 ### 面试官常见 follow-up
-1. **"判断给定字符串是否合法呢？"** → 计数 / 栈打包判断。即 **LC 20**。
-2. **"最长有效括号子串呢？"** → 栈存下标或 DP。即 **LC 32**。
-3. **"删除最少括号使之合法（返回所有方案）？"** → BFS：按层扩展删除，一旦出现合法字符串就不再增加层。即 **LC 301**。
+1. **"判断给定字符串是否合法呢？"** → 计数 / 栈打包判断。即 [**LC 20**](https://leetcode.cn/problems/valid-parentheses/)。
+2. **"最长有效括号子串呢？"** → 栈存下标或 DP。即 [**LC 32**](https://leetcode.cn/problems/longest-valid-parentheses/)。
+3. **"删除最少括号使之合法（返回所有方案）？"** → BFS：按层扩展删除，一旦出现合法字符串就不再增加层。即 [**LC 301**](https://leetcode.cn/problems/remove-invalid-parentheses/)。
 4. **"生成不同括号类型的所有合法串？"** → 栈助助的回溯；需为每种类型单独计数。
 5. **"有多少个不同的合法串（只求数量）？"** → 直接输出 Catalan(n)；DP `f[i] = sum(f[j]*f[i-1-j])`。
 6. **"打印流场景，一个个输出不能一次性存？"** → 回溯生成过程中直接 print 即可，不使用 `ans` 列表。
 
 ### 同类型推荐（**回溯剪枝家族**）
-- LC 20. 有效的括号
-- LC 32. 最长有效括号
-- LC 301. 删除无效的括号
-- LC 1249. 移除无效的括号
-- LC 921. 使括号有效的最少添加
-- LC 17. 电话号码字母组合（无剪枝的纯回溯）
-- LC 39. 组合总和（剪枝：sum 超过 target 提前返回）
+- [LC 20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/)
+- [LC 32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/)
+- [LC 301. 删除无效的括号](https://leetcode.cn/problems/remove-invalid-parentheses/)
+- [LC 1249. 移除无效的括号](https://leetcode.cn/problems/minimum-remove-to-make-valid-parentheses/)
+- [LC 921. 使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/)
+- [LC 17. 电话号码字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)（无剪枝的纯回溯）
+- [LC 39. 组合总和](https://leetcode.cn/problems/combination-sum/)（剪枝：sum 超过 target 提前返回）

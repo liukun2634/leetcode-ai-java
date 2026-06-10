@@ -166,13 +166,13 @@ A：能，矩阵快速幂：`[[1,1],[1,0]]^n`。代码长，面试少考。
 2. **"用最少步数到达？"** → 这就不是方案数了，是 BFS / DP min。
 3. **"有些台阶有 cost（LC 746）？"** → `dp[i] = min(dp[i-1], dp[i-2]) + cost[i]`。
 4. **"返回所有具体路径？"** → 回溯，O(2^n) 输出。
-5. **"循环楼梯（绕一圈回起点）？"** → 拆首尾两种情况。类 LC 213 打家劫舍 II。
+5. **"循环楼梯（绕一圈回起点）？"** → 拆首尾两种情况。类 [LC 213](https://leetcode.cn/problems/house-robber-ii/) 打家劫舍 II。
 6. **"O(log n) 实现？"** → 矩阵快速幂；或 Binet 公式（浮点精度风险）。
 
 ### 同类型推荐（**线性 DP / Fibonacci 家族**）
 - LC 746. 使用最小花费爬楼梯
-- LC 198. 打家劫舍（同模板）
-- LC 213. 打家劫舍 II（环形）
-- LC 91. 解码方法
-- LC 509. 斐波那契数
+- [LC 198. 打家劫舍](https://leetcode.cn/problems/house-robber/)（同模板）
+- [LC 213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/)（环形）
+- [LC 91. 解码方法](https://leetcode.cn/problems/decode-ways/)
+- [LC 509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
 - LC 1137. 第 N 个泰波那契数

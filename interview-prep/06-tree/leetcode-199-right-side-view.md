@@ -195,17 +195,17 @@ A：BFS 最坏 O(n)（最宽层）；DFS O(h)（树高）。完全二叉树 h=lo
 
 ### 面试官常见 follow-up
 1. **"左视图怎么改？"** → BFS 取 `k == 0` 那个；DFS 先左后右。
-2. **"俯视图 / 仰视图？"** → 需投影到水平坐标，复杂得多。需 DFS + 记录 (col, row)。LC 314。
+2. **"俯视图 / 仰视图？"** → 需投影到水平坐标，复杂得多。需 DFS + 记录 (col, row)。[LC 314](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/)。
 3. **"每层最大值（LC 515）？"** → 同 BFS 模板，每层维护 max。
-4. **"每层平均值（LC 637）？"** → BFS 取层和 / size。
+4. **"每层平均值（[LC 637](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)）？"** → BFS 取层和 / size。
 5. **"二叉树的边界（LC 545）？"** → 左视图 + 右视图 + 叶子。
 6. **"N 叉树的右视图？"** → BFS 模板里改 `for (TreeNode child : node.children)`。
 
 ### 同类型推荐（**层序变种家族**）
-- LC 102. 二叉树的层序遍历（基础）
-- LC 107. 二叉树的层序遍历 II（自底向上）
-- LC 103. 锯齿形层序遍历
+- [LC 102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)（基础）
+- [LC 107. 二叉树的层序遍历 II](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)（自底向上）
+- [LC 103. 锯齿形层序遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/)
 - LC 515. 每层最大值
-- LC 637. 每层平均值
+- [LC 637. 每层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)
 - LC 545. 二叉树的边界
-- LC 314. 二叉树的垂序遍历
+- [LC 314. 二叉树的垂序遍历](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/)

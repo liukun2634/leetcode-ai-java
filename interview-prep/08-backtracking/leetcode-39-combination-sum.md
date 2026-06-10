@@ -194,18 +194,18 @@ A：排序后加 `if (i > start && c[i] == c[i-1]) continue;` 跳过同层重复
 A：求方案数可以（背包 DP）；求所有方案需要回溯（输出量呈指数级）。
 
 ### 面试官常见 follow-up
-1. **"每个元素只能选一次（LC 40）？"** → 循环传 `i+1` + 同层去重。
+1. **"每个元素只能选一次（[LC 40](https://leetcode.cn/problems/combination-sum-ii/)）？"** → 循环传 `i+1` + 同层去重。
 2. **"求方案数（不要具体方案）？"** → 完全背包 DP，`dp[j] += dp[j-c]`。
 3. **"组合总和 III（1-9，固定 k 个数）？"** → 多一个 `path.size() == k` 检查。LC 216。
 4. **"组合总和 IV：顺序不同算不同（不是组合而是排列）？"** → DP `dp[i] += dp[i-c]`（外层和、内层 c）。LC 377。
-5. **"返回最少元素个数的组合？"** → 转 LC 322 零钱兑换，DP。
+5. **"返回最少元素个数的组合？"** → 转 [LC 322](https://leetcode.cn/problems/coin-change/) 零钱兑换，DP。
 6. **"target 很大（如 10^9）？"** → 回溯爆炸，需要 DP / 数学。
 
 ### 同类型推荐（**回溯组合家族**）
-- LC 40. 组合总和 II（含重复，每元素一次）
+- [LC 40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)（含重复，每元素一次）
 - LC 216. 组合总和 III（固定 k 个数）
 - LC 377. 组合总和 IV（求方案数 / 排列）
-- LC 77. 组合（固定 k）
-- LC 78. 子集
-- LC 90. 子集 II
-- LC 322. 零钱兑换（最少件数）
+- [LC 77. 组合](https://leetcode.cn/problems/combinations/)（固定 k）
+- [LC 78. 子集](https://leetcode.cn/problems/subsets/)
+- [LC 90. 子集 II](https://leetcode.cn/problems/subsets-ii/)
+- [LC 322. 零钱兑换](https://leetcode.cn/problems/coin-change/)（最少件数）

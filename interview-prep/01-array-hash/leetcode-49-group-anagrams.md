@@ -161,10 +161,10 @@ A：计数数组改 `int[128]` （ASCII）或 `Map<Character, Integer>`（Unicod
 A：面试能说出“预估桶数避免 rehash”满分。如 `new HashMap<>(strs.length * 2)` 避免多次扩容；但不设也能 AC。
 
 ### 面试官常见 follow-up
-1. **"判断两个串是否为异位词（不是分组）？"** → 直接比较计数数组是否相等，不需 HashMap。即 **LC 242**。
-2. **"在字符串 s 中找 p 的所有异位词子串？"** → 滑动窗口 + 计数数组。即 **LC 438**。
-3. **"多词共同字符（如查多串公共出现的字母）？"** → 多串计数数组取最小值。即 **LC 1002**。
-4. **"按字符出现频次排序输出字符串？"** → 计数后按 count 排序输出字符。即 **LC 451**。
+1. **"判断两个串是否为异位词（不是分组）？"** → 直接比较计数数组是否相等，不需 HashMap。即 [**LC 242**](https://leetcode.cn/problems/valid-anagram/)。
+2. **"在字符串 s 中找 p 的所有异位词子串？"** → 滑动窗口 + 计数数组。即 [**LC 438**](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)。
+3. **"多词共同字符（如查多串公共出现的字母）？"** → 多串计数数组取最小值。即 [**LC 1002**](https://leetcode.cn/problems/find-common-characters/)。
+4. **"按字符出现频次排序输出字符串？"** → 计数后按 count 排序输出字符。即 [**LC 451**](https://leetcode.cn/problems/sort-characters-by-frequency/)。
 5. **"如果输入是流，需要随时返回当前分组结果？"** → HashMap 天然支持，每来一个串算出 key 加入对应桶。
 6. **"字串极长（K=10^5）但总量少（N=10）呢？"** → 仍然计数版更优；K 越大越别用排序版。
 
@@ -174,8 +174,8 @@ A：面试能说出“预估桶数避免 rehash”满分。如 `new HashMap<>(st
 3. 大小写敏感 + 含其他字符怎么办？→ 计数数组改 `int[128]`；或直接用排序 key。
 
 ### 同类型推荐
-- LC 242. 有效的字母异位词
-- LC 438. 找到字符串中所有字母异位词（滑动窗口 + 计数）
-- LC 1002. 查找共用字符
-- LC 451. 根据字符出现频率排序（计数 + 排序）
-- LC 1640. 能否连接形成数组（哈希分组）
+- [LC 242. 有效的字母异位词](https://leetcode.cn/problems/valid-anagram/)
+- [LC 438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)（滑动窗口 + 计数）
+- [LC 1002. 查找共用字符](https://leetcode.cn/problems/find-common-characters/)
+- [LC 451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)（计数 + 排序）
+- [LC 1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)（哈希分组）

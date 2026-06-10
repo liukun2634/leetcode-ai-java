@@ -210,10 +210,10 @@ A：算法仍正确。每个孤立节点也是一个连通分量。
 6. **"流式数据：边一个个到来，每次报告分量数？"** → 并查集天然支持。
 
 ### 同类型推荐（**连通分量 / 并查集家族**）
-- LC 200. 岛屿数量
-- LC 305. 岛屿数量 II（动态加岛 → 并查集）
-- LC 684. 冗余连接（并查集判环）
-- LC 685. 冗余连接 II（有向图判环）
-- LC 721. 账户合并
+- [LC 200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
+- [LC 305. 岛屿数量 II](https://leetcode.cn/problems/number-of-islands-ii/)（动态加岛 → 并查集）
+- [LC 684. 冗余连接](https://leetcode.cn/problems/redundant-connection/)（并查集判环）
+- [LC 685. 冗余连接 II](https://leetcode.cn/problems/redundant-connection-ii/)（有向图判环）
+- [LC 721. 账户合并](https://leetcode.cn/problems/accounts-merge/)
 - LC 1319. 连通网络的操作次数
 - LC 990. 等式方程的可满足性

@@ -205,17 +205,17 @@ A：不能 O(1)。中位数需双堆维护（LC 295）。
 A：本题单线程；多线程要加锁或用 `ConcurrentLinkedDeque`，但操作不再 O(1) 原子。
 
 ### 面试官常见 follow-up
-1. **"实现 MaxStack（LC 716）？"** → 把 `Math.min` 换成 `Math.max`。但 LC 716 还要支持 popMax，需要双链表 + TreeMap。
+1. **"实现 MaxStack（[LC 716](https://leetcode.cn/problems/max-stack/)）？"** → 把 `Math.min` 换成 `Math.max`。但 [LC 716](https://leetcode.cn/problems/max-stack/) 还要支持 popMax，需要双链表 + TreeMap。
 2. **"O(1) 空间方案？"** → 差值法（见解法 B）。
-3. **"两栈实现队列（LC 232）？"** → 类似设计题，用 in/out 双栈。
-4. **"队列实现栈（LC 225）？"** → 用两个队列轮转。
+3. **"两栈实现队列（[LC 232](https://leetcode.cn/problems/implement-queue-using-stacks/)）？"** → 类似设计题，用 in/out 双栈。
+4. **"队列实现栈（[LC 225](https://leetcode.cn/problems/implement-stack-using-queues/)）？"** → 用两个队列轮转。
 5. **"线程安全的 MinStack？"** → 加 ReentrantLock；或读多写少时 RWLock。
 6. **"返回 getMin 时的栈快照？"** → 用持久化数据结构（不可变栈）。
 
 ### 同类型推荐（**栈设计家族**）
-- LC 232. 用栈实现队列
-- LC 225. 用队列实现栈
-- LC 716. 最大栈
-- LC 895. 最大频率栈
-- LC 1381. 设计一个支持增量操作的栈
-- LC 1063. 有效子数组数（单调栈）
+- [LC 232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)
+- [LC 225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/)
+- [LC 716. 最大栈](https://leetcode.cn/problems/max-stack/)
+- [LC 895. 最大频率栈](https://leetcode.cn/problems/maximum-frequency-stack/)
+- [LC 1381. 设计一个支持增量操作的栈](https://leetcode.cn/problems/design-a-stack-with-increment-operation/)
+- [LC 1063. 有效子数组数](https://leetcode.cn/problems/number-of-valid-subarrays/)（单调栈）

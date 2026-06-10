@@ -224,11 +224,11 @@ A：need 里为 0 的字符 valid 不该变动。不加护梨会让 cnt[c] 从 0
 6. **"转为字符串 → 数组问题：最小覆盖某集合的连续子数组？"** → 同模板，只是用 HashMap 代替数组。
 
 ### 同类型推荐（**变长滑动窗口家族**）
-- LC 3. 无重复字符的最长子串
-- LC 209. 长度最小的子数组（求最短）
-- LC 567. 字符串的排列（固定长度窗口）
-- LC 438. 找到字符串中所有字母异位词
-- LC 30. 串联所有单词的子串
-- LC 159. 至多包含两个不同字符的最长子串
-- LC 340. 至多包含 K 个不同字符的最长子串
-- LC 992. K 个不同整数的子数组（**恰好转换成"至多 K"减"至多 K-1"** 的经典套路）
+- [LC 3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+- [LC 209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)（求最短）
+- [LC 567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/)（固定长度窗口）
+- [LC 438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+- [LC 30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+- [LC 159. 至多包含两个不同字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/)
+- [LC 340. 至多包含 K 个不同字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/)
+- [LC 992. K 个不同整数的子数组](https://leetcode.cn/problems/subarrays-with-k-different-integers/)（**恰好转换成"至多 K"减"至多 K-1"** 的经典套路）

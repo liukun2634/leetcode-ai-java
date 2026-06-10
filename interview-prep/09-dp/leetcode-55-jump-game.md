@@ -153,17 +153,17 @@ A：贪心区间分层：维护当前层"能到的最远位置"`curEnd`、下一
 A：本题非负且只能向后跳。若允许双向跳，问题变成图最短路（BFS）。
 
 ### 面试官常见 follow-up
-1. **"求最少跳几步（LC 45）？"** → 贪心区间分层。
-2. **"跳跃游戏 III（LC 1306）：左右跳到任意 0？"** → 改成 BFS。
+1. **"求最少跳几步（[LC 45](https://leetcode.cn/problems/jump-game-ii/)）？"** → 贪心区间分层。
+2. **"跳跃游戏 III（[LC 1306](https://leetcode.cn/problems/jump-game-iii/)）：左右跳到任意 0？"** → 改成 BFS。
 3. **"跳跃游戏 IV（LC 1345）：同值任意跳？"** → BFS + 同值组哈希。
 4. **"跳跃游戏 V/VI/VII？"** → DP / 单调队列。
 5. **"统计所有能到达终点的方案数？"** → DP，`dp[i] = sum(dp[j], j 能跳到 i)`。
 6. **"返回一条具体的可行路径？"** → 贪心时记录每个 i 是从哪里跳过来的，最后回溯。
 
 ### 同类型推荐（**贪心 / 跳跃家族**）
-- LC 45. 跳跃游戏 II（最少步数）
-- LC 1306. 跳跃游戏 III
+- [LC 45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)（最少步数）
+- [LC 1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/)
 - LC 1345. 跳跃游戏 IV
 - LC 1654. 到家的最少跳跃次数
-- LC 1696. 跳跃游戏 VI（DP + 单调队列）
-- LC 134. 加油站（贪心）
+- [LC 1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)（DP + 单调队列）
+- [LC 134. 加油站](https://leetcode.cn/problems/gas-station/)（贪心）

@@ -149,16 +149,16 @@ A：只关心 sum 和长度，O(1) 变量足够。
 A：sum 最大 `10^5 * 10^4 = 10^9`，int 够；若元素是 `10^9` 则要 long。
 
 ### 面试官常见 follow-up
-1. **"含负数怎么改？"** → 前缀和 + 单调递增队列。LC 862。
+1. **"含负数怎么改？"** → 前缀和 + 单调递增队列。[LC 862](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/)。
 2. **"求所有满足 sum >= target 的子数组数量？"** → 双指针变种，但要小心计数公式（不是简单 r-l+1）。
 3. **"求 sum == target 的最短子数组？"** → 前缀和 + 哈希表存"最后一次出现的下标"。
-4. **"求乘积 < k 的子数组数量（LC 713）？"** → 同滑窗模板，元素必须为正。
+4. **"求乘积 < k 的子数组数量（[LC 713](https://leetcode.cn/problems/subarray-product-less-than-k/)）？"** → 同滑窗模板，元素必须为正。
 5. **"二维版：矩阵中和 ≥ target 的最小子矩阵？"** → 枚举上下边界 + 一维滑窗，O(m²n)。
 6. **"数据流场景？"** → 滑窗可在线，每来一个数 O(1) 摊销更新。
 
 ### 同类型推荐（**变长窗口家族**）
-- LC 3. 无重复字符的最长子串（求最长）
-- LC 76. 最小覆盖子串（求最短，覆盖条件）
-- LC 713. 乘积小于 K 的子数组（计数）
-- LC 1004. 最大连续 1 的个数 III（含 k 个 0）
-- LC 862. 和至少为 K 的最短子数组（含负数 + 前缀和 + 单调队列）
+- [LC 3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)（求最长）
+- [LC 76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)（求最短，覆盖条件）
+- [LC 713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/)（计数）
+- [LC 1004. 最大连续 1 的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)（含 k 个 0）
+- [LC 862. 和至少为 K 的最短子数组](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/)（含负数 + 前缀和 + 单调队列）

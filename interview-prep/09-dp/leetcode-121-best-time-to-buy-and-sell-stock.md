@@ -171,22 +171,22 @@ A：`hold` = 今天持股状态下的最佳现金（买入后从 0 变负）；`
 A：可以。maxProfit 初始 0，若价格一路下跌，maxProfit 始终 0，返回正确。
 
 ### 面试官常见 follow-up
-1. **"不限交易次数（LC 122）？"** → 贪心：所有相邻正差都吃下（上涨都赚到上一场事件）。或状态机 DP。
-2. **"最多 2 次（LC 123） / 最多 k 次（LC 188）？"** → 状态机 DP 震纺出 k 个 hold/cash 状态。
-3. **"含冷冻期（LC 309）？"** → 状态机加一个冷冻状态。
-4. **"含手续费（LC 714）？"** → 卖出时减 fee 即可。
+1. **"不限交易次数（[LC 122](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)）？"** → 贪心：所有相邻正差都吃下（上涨都赚到上一场事件）。或状态机 DP。
+2. **"最多 2 次（[LC 123](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)） / 最多 k 次（[LC 188](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/)）？"** → 状态机 DP 震纺出 k 个 hold/cash 状态。
+3. **"含冷冻期（[LC 309](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/)）？"** → 状态机加一个冷冻状态。
+4. **"含手续费（[LC 714](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)）？"** → 卖出时减 fee 即可。
 5. **"返回买卖日期？"** → 更新 maxProfit 时同步记录 “起价日” 与 “今天”。
 6. **"股价流式进来（一个一个接收）？"** → 本算法天然在线：每收到一个价格，O(1) 更新 minPrice 与 maxProfit。
 
 ### 同类型推荐（**股票系列**）
-- LC 122. 买卖股票最佳时机 II（多次交易）
-- LC 123. 买卖股票最佳时机 III（最多 2 次）
-- LC 188. 买卖股票最佳时机 IV（最多 k 次）
-- LC 309. 含冷冻期
-- LC 714. 含手续费
+- [LC 122. 买卖股票最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)（多次交易）
+- [LC 123. 买卖股票最佳时机 III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)（最多 2 次）
+- [LC 188. 买卖股票最佳时机 IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/)（最多 k 次）
+- [LC 309. 含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+- [LC 714. 含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 
 **"扫描维护对面端最优"模板**：
-- LC 11. 盛最多水的容器
-- LC 42. 接雨水（双指针 + 前后缀最大）
-- LC 53. 最大子数组和（Kadane）
-- LC 152. 乘积最大子数组
+- [LC 11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/)
+- [LC 42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)（双指针 + 前后缀最大）
+- [LC 53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)（Kadane）
+- [LC 152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/)

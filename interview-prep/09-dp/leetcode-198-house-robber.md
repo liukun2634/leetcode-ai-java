@@ -177,21 +177,21 @@ A：反向回溯。从 dp[n-1] 开始，若 `dp[i] != dp[i-1]` 则偊了 i，跳
 A：`dp[i] = max(dp[i-1], dp[i-2] + nums[i], dp[i-3] + nums[i-1] + nums[i])`；报警限制 i-1, i-2, i-3 三者不能全偷。难度上升但模板不变。
 
 ### 面试官常见 follow-up
-1. **"环形偊窃（首尾相邻）（LC 213）？"** → 分两次：偊 `[0, n-2]` 或 `[1, n-1]`，取较大。
-2. **"树形偊窃（LC 337）？"** → DFS 返回 `int[]{不偷, 偷}`；在每个节点决定。
+1. **"环形偊窃（首尾相邻）（[LC 213](https://leetcode.cn/problems/house-robber-ii/)）？"** → 分两次：偊 `[0, n-2]` 或 `[1, n-1]`，取较大。
+2. **"树形偊窃（[LC 337](https://leetcode.cn/problems/house-robber-iii/)）？"** → DFS 返回 `int[]{不偷, 偷}`；在每个节点决定。
 3. **"删除并获得点数（LC 740）？"** → 转化为偊窃：按值汇总到 `sum[x]`，则偊 x 后不能选 x±1。
 4. **"返回偊了哪些房间？"** → 保留 dp 数组，反向回溯。
 5. **"多个小偷合作（可同时偊不相邻的多间）？"** → 问题不变，还是 DP。本题本身就允许偊多间。
-6. **"每间房被偊后要冷却 1 夜才能再偊（与状态机面试可全通）？"** → 状态机 DP，定义 `偊/不偊/冷却` 三状态。类 LC 309。
+6. **"每间房被偊后要冷却 1 夜才能再偊（与状态机面试可全通）？"** → 状态机 DP，定义 `偊/不偊/冷却` 三状态。类 [LC 309](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/)。
 
 ### 同类型推荐（**打家劫舍家族**）
-- LC 213. 打家劫舍 II（环形）
-- LC 337. 打家劫舍 III（树形 DP）
+- [LC 213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/)（环形）
+- [LC 337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/)（树形 DP）
 - LC 740. 删除并获得点数（转化为打家劫舍）
 - LC 2320. 统计放置房子的方式数
 
 **线性 DP 同模板**：
-- LC 70. 爬楼梯
+- [LC 70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)
 - LC 746. 使用最小花费爬楼梯
-- LC 91. 解码方法（带条件的转移）
-- LC 309. 最佳买卖股票时机含冷冻期
+- [LC 91. 解码方法](https://leetcode.cn/problems/decode-ways/)（带条件的转移）
+- [LC 309. 最佳买卖股票时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/)

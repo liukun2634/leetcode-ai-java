@@ -142,18 +142,18 @@ A：对。整个数组都满足 `nums[mid] < nums[r]`，每次走左，最终 l 
 A：反向：`nums[mid] < nums[l]` 时最大在左半；否则在右半。或先找最小值，最大 = `nums[(idx + n - 1) % n]`。
 
 ### 面试官常见 follow-up
-1. **"含重复元素呢（LC 154）？"** → 相等时 `r--`，最坏 O(n)。
-2. **"搜索旋转数组中的某值（LC 33）？"** → 二分前先判哪半有序，再决定走哪边。
+1. **"含重复元素呢（[LC 154](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)）？"** → 相等时 `r--`，最坏 O(n)。
+2. **"搜索旋转数组中的某值（[LC 33](https://leetcode.cn/problems/search-in-rotated-sorted-array/)）？"** → 二分前先判哪半有序，再决定走哪边。
 3. **"返回旋转点（最小值的下标）？"** → 直接返回 l（不是 nums[l]）。
 4. **"如何检测数组到底旋转了几次？"** → 找到最小值后，旋转次数 = 最小值的下标。
 5. **"未旋转 vs 已旋转 怎么区分？"** → `nums[0] <= nums[n-1]` → 未旋转。
 6. **"分布式场景：数组按段切到多台机器？"** → 每台先找局部最小，再聚合时再二分。
 
 ### 同类型推荐（**二分变形家族**）
-- LC 33. 搜索旋转排序数组
-- LC 81. 搜索旋转排序数组 II（含重复）
-- LC 154. 寻找旋转排序数组中的最小值 II（含重复）
-- LC 162. 寻找峰值（无序数组二分）
-- LC 704. 二分查找（基础）
-- LC 35. 搜索插入位置
-- LC 4. 寻找两个正序数组的中位数（双数组二分）
+- [LC 33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
+- [LC 81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)（含重复）
+- [LC 154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)（含重复）
+- [LC 162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/)（无序数组二分）
+- [LC 704. 二分查找](https://leetcode.cn/problems/binary-search/)（基础）
+- [LC 35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/)
+- [LC 4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/)（双数组二分）

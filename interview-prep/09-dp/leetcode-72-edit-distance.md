@@ -208,18 +208,18 @@ A：LC 583：那时问题转为求 LCS，答案 = `m + n - 2 * LCS(word1, word2)
 A：从 `dp[m][n]` 反向回溯：比较 dp[i][j] 是从哪个相邻状态转移过来的，按来源反推“替/删/插/不动”。
 
 ### 面试官常见 follow-up
-1. **"只能插入与删除（LC 583）？"** → 转化为 LCS：答 = `m + n - 2·LCS`。
+1. **"只能插入与删除（[LC 583](https://leetcode.cn/problems/delete-operation-for-two-strings/)）？"** → 转化为 LCS：答 = `m + n - 2·LCS`。
 2. **"不同操作代价不同？"** → `+1` 改成 `+c_replace / +c_delete / +c_insert`，其余不变。
-3. **"求最小 ASCII 删除和（LC 712）？"** → `+1` 改成 `+字符 ASCII`。
-4. **"判是子序列（LC 392）？"** → 双指针一遍扫；DP 也可，但双指针 O(n+m) 更优。
+3. **"求最小 ASCII 删除和（[LC 712](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/)）？"** → `+1` 改成 `+字符 ASCII`。
+4. **"判是子序列（[LC 392](https://leetcode.cn/problems/is-subsequence/)）？"** → 双指针一遍扫；DP 也可，但双指针 O(n+m) 更优。
 5. **"有多少种不同的子序列变成 word2（LC 115）？"** → 另一种双串 DP：`dp[i][j]` = `dp[i-1][j-1] + dp[i-1][j]`（匹配时） / `dp[i-1][j]`（不匹配）。
 6. **"正则表达式匹配（LC 10） / 通配符匹配（LC 44）？"** → 同是双串 DP，但多一些状态划分（`*`、`?`、`.`）。
 
 ### 同类型推荐（**双串 DP 家族**）
-- LC 1143. 最长公共子序列（LCS，模板姊妹题）
-- LC 583. 两个字符串的删除操作
-- LC 712. 两个字符串的最小 ASCII 删除和
-- LC 392. 判断子序列（DP / 双指针）
+- [LC 1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)（LCS，模板姊妹题）
+- [LC 583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
+- [LC 712. 两个字符串的最小 ASCII 删除和](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/)
+- [LC 392. 判断子序列](https://leetcode.cn/problems/is-subsequence/)（DP / 双指针）
 - LC 115. 不同的子序列
 - LC 97. 交错字符串
 - LC 10. 正则表达式匹配（带通配符的 DP）

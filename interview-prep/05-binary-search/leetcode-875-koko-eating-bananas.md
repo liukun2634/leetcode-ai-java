@@ -179,17 +179,17 @@ A：循环退出时 `l == r`，返回哪个都行。习惯写 `l`。
 A：不必要但快。最坏情况下省略 50% 时间。
 
 ### 面试官常见 follow-up
-1. **"在 D 天内运送货物的最低运力（LC 1011）？"** → 答案二分，check 算需要几天。
-2. **"分割数组的最大值（LC 410）？"** → 答案二分，check 算分成几段。
-3. **"制作 m 束花需要的最少天数（LC 1482）？"** → 答案二分天数。
+1. **"在 D 天内运送货物的最低运力（[LC 1011](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/)）？"** → 答案二分，check 算需要几天。
+2. **"分割数组的最大值（[LC 410](https://leetcode.cn/problems/split-array-largest-sum/)）？"** → 答案二分，check 算分成几段。
+3. **"制作 m 束花需要的最少天数（[LC 1482](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/)）？"** → 答案二分天数。
 4. **"包裹运输容量？"** → 同类，本质都是"最小满足 X"。
 5. **"为什么 check 是 O(n)？还能更快吗？"** → 累加 n 个 ceil，难再快。除非 piles 排序后用更巧的方法。
 6. **"如果 h < piles.length 怎么办？"** → 题目保证 h ≥ piles.length；否则无解。
 
 ### 同类型推荐（**答案二分家族**）
-- LC 1011. 在 D 天内送达包裹的能力
-- LC 410. 分割数组的最大值
-- LC 1482. 制作 m 束花所需的最少天数
-- LC 2226. 每个小孩最多能分到多少糖果
-- LC 1283. 使结果不超过阈值的最小除数
-- LC 2187. 完成旅途的最少时间
+- [LC 1011. 在 D 天内送达包裹的能力](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/)
+- [LC 410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/)
+- [LC 1482. 制作 m 束花所需的最少天数](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/)
+- [LC 2226. 每个小孩最多能分到多少糖果](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/)
+- [LC 1283. 使结果不超过阈值的最小除数](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/)
+- [LC 2187. 完成旅途的最少时间](https://leetcode.cn/problems/minimum-time-to-complete-trips/)

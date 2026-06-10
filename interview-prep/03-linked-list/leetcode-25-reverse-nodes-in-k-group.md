@@ -222,15 +222,15 @@ A：可以，把 k 个节点 push 入栈再 pop 重连。O(n) 空间，不如三
 ### 面试官常见 follow-up
 1. **"剩余不足 k 个也要反转？"** → 数节点时不检查 null，强行反转剩余。
 2. **"每 k 个一组旋转（不反转）？"** → 找到分割点，重新拼接。
-3. **"反转链表的某个区间 [m, n]？"** → LC 92，dummy + 走到 m-1，反转 (n-m+1) 个。
-4. **"两两交换（k=2 特例，LC 24）？"** → 本题代入 k=2 即可。
+3. **"反转链表的某个区间 [m, n]？"** → [LC 92](https://leetcode.cn/problems/reverse-linked-list-ii/)，dummy + 走到 m-1，反转 (n-m+1) 个。
+4. **"两两交换（k=2 特例，[LC 24](https://leetcode.cn/problems/swap-nodes-in-pairs/)）？"** → 本题代入 k=2 即可。
 5. **"如果 k 很大，链表很长，避免爆栈？"** → 用迭代版。
 6. **"如何用栈实现？"** → 每次压 k 个，pop 时重连前驱。代码更长但思路直观。
 
 ### 同类型推荐（**链表反转家族**）
-- LC 206. 反转链表（最简版）
-- LC 92. 反转链表 II（区间反转）
-- LC 24. 两两交换链表中的节点（k=2 特例）
-- LC 61. 旋转链表（不是反转）
-- LC 234. 回文链表（找中点 + 反转后半）
-- LC 143. 重排链表（找中点 + 反转后半 + 合并）
+- [LC 206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/)（最简版）
+- [LC 92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)（区间反转）
+- [LC 24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)（k=2 特例）
+- [LC 61. 旋转链表](https://leetcode.cn/problems/rotate-list/)（不是反转）
+- [LC 234. 回文链表](https://leetcode.cn/problems/palindrome-linked-list/)（找中点 + 反转后半）
+- [LC 143. 重排链表](https://leetcode.cn/problems/reorder-list/)（找中点 + 反转后半 + 合并）

@@ -192,15 +192,15 @@ A：能但 O((m+n) log k)；不达标。
 ### 面试官常见 follow-up
 1. **"k 个有序数组的中位数？"** → 多个堆 + 二分答案。
 2. **"两个数组的第 k 小？"** → 类似本题，每次排除 k/2 个元素。
-3. **"流式中位数（LC 295）？"** → 双堆，与本题完全不同的思路。
+3. **"流式中位数（[LC 295](https://leetcode.cn/problems/find-median-from-data-stream/)）？"** → 双堆，与本题完全不同的思路。
 4. **"无法访问数组的元素（只能查询）？"** → 二分仍可行。
 5. **"内存不够，两个数组分别在磁盘？"** → 二分访问的元素数 O(log(m+n))，磁盘 IO 极少。
 6. **"如果数组很短（m+n ≤ 100）？"** → 直接合并排序更简单；只在大数据下二分才有意义。
 
 ### 同类型推荐（**双数组二分 / 中位数家族**）
-- LC 295. 数据流的中位数（双堆）
-- LC 480. 滑动窗口中位数
-- LC 215. 数组中第 K 大元素（单数组）
-- LC 378. 有序矩阵中第 K 小（二维）
-- LC 668. 乘法表中第 k 小的数（答案二分）
-- LC 786. 第 k 个最小的素数分数
+- [LC 295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)（双堆）
+- [LC 480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/)
+- [LC 215. 数组中第 K 大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/)（单数组）
+- [LC 378. 有序矩阵中第 K 小](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/)（二维）
+- [LC 668. 乘法表中第 k 小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/)（答案二分）
+- [LC 786. 第 k 个最小的素数分数](https://leetcode.cn/problems/k-th-smallest-prime-fraction/)

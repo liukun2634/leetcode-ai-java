@@ -180,16 +180,16 @@ A：能，但空间 O(n)，不满足题目要求。HashSet 版本：把所有正
 
 ### 面试官常见 follow-up
 1. **"如果允许 O(n) 额外空间呢？"** → HashSet 或开 `boolean[n+1]` 标记。代码更短，但空间不达标。
-2. **"求所有缺失的正数（LC 448）？"** → 同模板归位后，所有 `nums[i] != i+1` 的位置 i+1 都缺失。
-3. **"求重复的数字（LC 442）？"** → 归位时 swap 失败的值就是重复的；或用 Floyd 判圈（LC 287）。
+2. **"求所有缺失的正数（[LC 448](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/)）？"** → 同模板归位后，所有 `nums[i] != i+1` 的位置 i+1 都缺失。
+3. **"求重复的数字（[LC 442](https://leetcode.cn/problems/find-all-duplicates-in-an-array/)）？"** → 归位时 swap 失败的值就是重复的；或用 Floyd 判圈（[LC 287](https://leetcode.cn/problems/find-the-duplicate-number/)）。
 4. **"如果数组很大无法装入内存？"** → 外部排序后扫描；或位图（n/8 字节）。
 5. **"如果允许修改但要求保持原数组顺序？"** → 无法原地，需 O(n) 额外空间。
 6. **"如果输入是流式（来一个数处理一个）？"** → 没法原地哈希；需要维护"已见过的正数集合"。
 
 ### 同类型推荐（**原地哈希家族**）
-- LC 287. 寻找重复数（Floyd 判圈）
-- LC 442. 数组中重复的数据
-- LC 448. 找到所有数组中消失的数字
-- LC 268. 丢失的数字（位运算 / 数学）
-- LC 645. 错误的集合
-- LC 128. 最长连续序列（哈希起点）
+- [LC 287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)（Floyd 判圈）
+- [LC 442. 数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array/)
+- [LC 448. 找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/)
+- [LC 268. 丢失的数字](https://leetcode.cn/problems/missing-number/)（位运算 / 数学）
+- [LC 645. 错误的集合](https://leetcode.cn/problems/set-mismatch/)
+- [LC 128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive/)（哈希起点）

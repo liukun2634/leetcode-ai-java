@@ -40,7 +40,7 @@
 
 把 k 个链表头放入小顶堆，每次弹堆顶最小节点接入结果链表，再把它的 next（若有）放入堆。
 
-> **学习点 ①**：**"K 路合并 / 多路归并"** 永远先想小顶堆。同模板：LC 264 丑数 II、LC 373、LC 632 最小区间、LC 378 矩阵第 K 小。
+> **学习点 ①**：**"K 路合并 / 多路归并"** 永远先想小顶堆。同模板：LC 264 丑数 II、LC 373、LC 632 最小区间、[LC 378](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) 矩阵第 K 小。
 
 ### 3. 分治合并
 
@@ -205,9 +205,9 @@ A：循环里 `if (head != null)` 跳过，堆空直接 break，返回 `dummy.ne
 6. **"如果 k 很大（10⁵）但每条只 1 个节点呢？"** → 退化为对 N 个数排序，O(N log N)。考虑直接 sort。
 
 ### 同类型推荐（**K 路合并 / 堆家族**）
-- LC 21. 合并两个有序链表（两路合并，本题子问题）
+- [LC 21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)（两路合并，本题子问题）
 - LC 264. 丑数 II（堆 + 去重）
 - LC 373. 查找和最小的 K 对数字
-- LC 378. 有序矩阵中第 K 小的元素
+- [LC 378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/)
 - LC 632. 最小区间
-- LC 295. 数据流的中位数（双堆）
+- [LC 295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)（双堆）

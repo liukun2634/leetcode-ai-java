@@ -154,34 +154,34 @@ A：排序后加 `if (i > 0 && nums[i] == nums[i-1] && !used[i-1]) continue;`。
 A：三步是一个原子操作。拆开后后面的 for 循环会看到不一致的 path/used 状态。「取 → 走 → 还」是回溯的肉身。
 
 ### 面试官常见 follow-up
-1. **"含重复元素的全排列（LC 47）？"** → 排序 + `!used[i-1]` 去重剪枝。
+1. **"含重复元素的全排列（[LC 47](https://leetcode.cn/problems/permutations-ii/)）？"** → 排序 + `!used[i-1]` 去重剪枝。
 2. **"第 k 个排列（LC 60）？"** → 不用回溯，用康托展开按位计算 (k-1)/(n-1)! 选首元素，O(n²)。
-3. **"下一个排列（LC 31）？"** → 从右找首个下降位 i，从右找首个 > nums[i] 的 j，交换后反转 i+1..end。O(n) 原地。
+3. **"下一个排列（[LC 31](https://leetcode.cn/problems/next-permutation/)）？"** → 从右找首个下降位 i，从右找首个 > nums[i] 的 j，交换后反转 i+1..end。O(n) 原地。
 4. **"排列中某位置限定为某值？"** → 回溯中加剪枝：`if (depth == k && nums[i] != target) continue;`。
 5. **"允许每个元素可选多次（重复排列）？"** → 去掉 `used`，每层 `for i = 0..n-1`。总量 n^n，限 n 很小。
-6. **"多个集合取笛卡尔积（如手机字母 LC 17）？"** → 回溯根据当前层选不同集合，状态是 depth 而非 used。
+6. **"多个集合取笛卡尔积（如手机字母 [LC 17](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)）？"** → 回溯根据当前层选不同集合，状态是 depth 而非 used。
 
 ### 同类型推荐（**回溯家族**）
 **排列类**：
-- LC 47. 全排列 II（含重复）
-- LC 31. 下一个排列（非回溯）
+- [LC 47. 全排列 II](https://leetcode.cn/problems/permutations-ii/)（含重复）
+- [LC 31. 下一个排列](https://leetcode.cn/problems/next-permutation/)（非回溯）
 
 **子集类**：
-- LC 78. 子集
-- LC 90. 子集 II（含重复）
+- [LC 78. 子集](https://leetcode.cn/problems/subsets/)
+- [LC 90. 子集 II](https://leetcode.cn/problems/subsets-ii/)（含重复）
 
 **组合类**：
-- LC 77. 组合
-- LC 39. 组合总和（可重复选）
-- LC 40. 组合总和 II（每元素最多一次 + 去重）
+- [LC 77. 组合](https://leetcode.cn/problems/combinations/)
+- [LC 39. 组合总和](https://leetcode.cn/problems/combination-sum/)（可重复选）
+- [LC 40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)（每元素最多一次 + 去重）
 - LC 216. 组合总和 III
 
 **字符串/格子**：
-- LC 22. 括号生成
-- LC 17. 电话号码字母组合
-- LC 79. 单词搜索
-- LC 131. 分割回文串
-- LC 51. N 皇后
+- [LC 22. 括号生成](https://leetcode.cn/problems/generate-parentheses/)
+- [LC 17. 电话号码字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
+- [LC 79. 单词搜索](https://leetcode.cn/problems/word-search/)
+- [LC 131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
+- [LC 51. N 皇后](https://leetcode.cn/problems/n-queens/)
 - LC 37. 解数独
 
 > **回溯题刷过 10 题以上，框架基本通用**。重点是熟练 **剪枝**。

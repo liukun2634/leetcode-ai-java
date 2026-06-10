@@ -167,7 +167,7 @@ A：每个下标最多入栈一次、出栈一次。总操作 ≤ 2n。这是单
 A：逐行看作 histogram：该行某列高度 = 该列从顶到该行连续 `1` 的个数（遇 `0` 则重置）。对每行调本题 → 总复杂度 O(mn)。
 
 ### 面试官常见 follow-up
-1. **"二维最大矩形（全 0/1 矩阵）？"** → 逐行调 LC 84。即 **LC 85**。
+1. **"二维最大矩形（全 0/1 矩阵）？"** → 逐行调 [LC 84](https://leetcode.cn/problems/largest-rectangle-in-histogram/)。即 [**LC 85**](https://leetcode.cn/problems/maximal-rectangle/)。
 2. **"只需要某一个柱子能形成的最大矩形？"** → 本题实际就是对每根柱子都算一遍。中途某一个的答案也可取。
 3. **"接雨水与本题都是单调栈，区别在哪？"** → 接雨水用递减栈（找下个更高），本题递增栈（找下个更矮）。体现“找更大/更小”的双生性。
 4. **"柱高可重复，要不要去重？"** → 不需要，同高度的柱在后面的结算中会被后来者覆盖。
@@ -175,11 +175,11 @@ A：逐行看作 histogram：该行某列高度 = 该列从顶到该行连续 `1
 6. **"n=10⁹ 量级还能跳么？"** → O(n) 时间 + O(n) 空间，内存是主要瓶颈；可能要考虑堆外存储。
 
 ### 同类型推荐（**单调栈家族**）
-- LC 85. 最大矩形（二维 + 本题）
-- LC 42. 接雨水（递减栈）
-- LC 496. 下一个更大元素 I
-- LC 503. 下一个更大元素 II（循环数组）
-- LC 739. 每日温度
-- LC 901. 股票价格跨度
-- LC 1019. 链表中的下一个更大节点
-- LC 962. 最大宽度坡（变种）
+- [LC 85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/)（二维 + 本题）
+- [LC 42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)（递减栈）
+- [LC 496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/)
+- [LC 503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/)（循环数组）
+- [LC 739. 每日温度](https://leetcode.cn/problems/daily-temperatures/)
+- [LC 901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/)
+- [LC 1019. 链表中的下一个更大节点](https://leetcode.cn/problems/next-greater-node-in-linked-list/)
+- [LC 962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/)（变种）
